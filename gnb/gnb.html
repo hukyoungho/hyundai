@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    html,
+    body {
+        width: 100%;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Nanum Gothic, '나눔고딕', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul,
+    li {
+        list-style: none;
+    }
+
+    #nav {
+        border: 1px solid black;
+        width: 100%;
+        height: 81px;
+        background: #fff url(img/bg_gnb.png) repeat-x left bottom;
+    }
+
+    #nav .nav_box {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1000px;
+        min-width: 1000px;
+    }
+
+    #nav .nav_box h1 {
+        text-indent: -9999px;
+        font-size: 0px;
+    }
+
+    #nav .nav_box h1+div {
+        float: left;
+        padding-top: 28px;
+        margin-right: 25px;
+    }
+
+    #nav .nav_box .list {
+        float: left;
+        margin-top: 31px;
+    }
+
+    #nav .nav_box .list li {
+        float: left;
+        width: 91px;
+        text-align: center;
+        letter-spacing: -1px;
+    }
+
+    #nav .nav_box .list li a {
+        color: #000;
+        font-size: 15px;
+        display: block;
+        font-weight: 700;
+    }
+
+    #nav .nav_box .issue {
+        float: left;
+        border: 2px solid #25a449;
+        margin-top: 27px;
+        margin-left: 15px;
+        padding: 0 7px 0 8px;
+    }
+
+    #nav .nav_box .issue a {
+        display: block;
+        line-height: 25px;
+        height: 25px;
+        color: #008445;
+        text-transform: uppercase;
+        font-family: 'Arial';
+        letter-spacing: -0.02em;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #nav .nav_box .util {
+        float: left;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+
+    #nav .nav_box .util li {
+        float: left;
+        margin-right: 5px;
+    }
+
+    #nav .nav_box .util li a.search {
+        background-image: url(img/icon_utillTop_01.png);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+        display: block;
+    }
+
+    #nav .nav_box .util li a.lang {
+        background-image: url(img/top_en.png);
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 16px;
+        display: block;
+    }
+
+    #section1 {
+        width: 100%;
+    }
+
+    #section1 .slide {
+        width: 100%;
+        border: 1px solid red;
+        position: relative;
+    }
+
+    #section1 .slide ul li {
+        display: none;
+        float: left;
+        position: relative;
+    }
+
+    #section1 .slide ul li {
+        display: none;
+        float: left;
+        position: relative;
+    }
+
+    #section1 .slide ul li span:nth-child(1) img {
+        width: 100%;
+    }
+
+    #section1 .slide ul li span:nth-child(2) img {
+        position: absolute;
+        top: 38%;
+        margin-left: 140px;
+    }
+
+    #section1 .slide ul li.on {
+        display: block;
+    }
+
+    #section1 .slide_button {
+        position: absolute;
+        left: 140px;
+        top: 45%;
+        margin-top: 80px;
+    }
+</style>
+
+<body>
+    <div id="nav">
+        <div class="nav_box">
+            <h1>
+            현대건설
+            </h1>
+            <div>
+                <a href="#none">
+                    <img src="img/h1_logo.png" alt="현대건설">
+                </a>
+            </div>
+
+            <ul class="list">
+                <li><a href="#none">회사소개</a></li>
+                <li><a href="#none">사업소개</a></li>
+                <li><a href="#none">투자정보</a></li>
+                <li><a href="#none">혁신기술</a></li>
+                <li><a href="#none">지속가능경영</a></li>
+                <li><a href="#none">인재채용</a></li>
+                <li><a href="#none">RP ROOM</a></li>
+            </ul>
+            <div class="issue">
+                <a href="#none">Hdec Issue</a>
+            </div>
+            <ul class="util">
+                <li>
+                    <a href="#none" title="통합검색" class="search"></a>
+                    <div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none" title="언어" class="lang"></a>
+                </li>
+            </ul>
+
+
+
+
+
+        </div>
+
+
+    </div>
+    <div id="section1">
+        <div class="slide">
+
+            <ul>
+                <li class="on">
+                    <span>
+                        <img src="img/first.jpg" alt="">
+                    </span>
+                    <span>
+                        <img src="img/first_head.png" alt="">
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <img src="img/second.jpg" alt="">
+                    </span>
+                    <span>
+                        <img src="img/first_head.png" alt="">
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <img src="img/third.jpg" alt="">
+                    </span>
+                    <span>
+                        <img src="img/first_head.png" alt="">
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <img src="img/fourth.jpg" alt="">
+                    </span>
+                    <span>
+                        <img src="img/first_head.png" alt="">
+                    </span>
+                </li>
+
+            </ul>
+
+
+
+        </div>
+        <div class="slide_button">
+            <div class="num">3 / 4</div>
+            <div class="direction">
+                <a class="prev" href="">Prev</a>
+                <a class="next" href="">Next</a>
+            </div>
+            <div class="start_end">
+                <div class="">
+                    <a class="" href="">Start</a>
+                </div>
+                <div class="">
+                    <a class="" href="">Stop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

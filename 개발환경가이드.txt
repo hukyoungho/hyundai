@@ -1,0 +1,3 @@
+http://withcoding.com/category/Python
+
+환경 설정 가이드
