@@ -1,0 +1,116 @@
+header{
+    height: 81px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: #fff;
+}
+header #wgnb{
+    max-width: 1000px;
+    height: 81px;
+    line-height: 81px;
+    /*background: powderblue;*/
+    margin: 0 auto;
+
+}
+
+header #wgnb h1 {
+    float: left;
+    font-size: 0px;
+    text-indent: -9999px;
+}
+
+
+header #wgnb .hlogo{
+    float: left;
+    padding-top: 7px;
+    margin-right: 25px;
+}
+
+header #wgnb .hlogo a{
+    display: inline-block;
+    width: 140px;
+    height: 88px;
+
+}
+
+header .gnb {
+    overflow: hidden;
+    float: left;
+}
+
+header .gnb li{
+    float: left;
+    width: 90px;
+    text-align: center;
+    font-size: 15px;
+    display: block;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+header .gnb li a{
+    color: #000;
+    display: inline-block;
+    height: 81px;
+    width: 92px;
+    padding: 0 1px;
+
+}
+
+header .hdec{
+    float: left;
+    margin-top: 27px;
+    margin-left: 25px;
+}
+
+header .hdec a {
+    border: 1px solid #25a449;
+    width: 81px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #008445;
+    text-transform: uppercase;
+    font-family: 'Arial';
+    letter-spacing: -0.02em;
+    padding: 1px 7px 1px 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header .util li{
+    float: left;
+    font-size: 0px;
+    text-indent: -9999px;
+}
+header .util{
+    float: right;
+    margin-top: 35px;
+    margin-right: 25px;
+}
+header .util li{
+    margin-right: 5px;
+}
+header .util li a.search{
+
+    font-size: 0px;
+    line-height: 0px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url(../img/icon_utillTop_01.png) no-repeat right top;
+    cursor: pointer;
+}
+header .util li a.lang{
+
+    font-size: 0px;
+    line-height: 0px;
+    width: 18px;
+    height: 16px;
+    display: block;
+    background: url(../img/top_en.png) no-repeat ;
+    cursor: pointer;
+}
