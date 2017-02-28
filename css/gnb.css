@@ -4,9 +4,12 @@ header{
     position: fixed;
     z-index: 10;
     background: #fff;
+    top: 0px;
 }
 header #wgnb{
-    max-width: 1000px;
+    min-width: 1030px;
+    max-width: 1030px;
+    width: 100%;
     height: 81px;
     line-height: 81px;
     /*background: powderblue;*/
@@ -25,12 +28,13 @@ header #wgnb .hlogo{
     float: left;
     padding-top: 7px;
     margin-right: 25px;
+    height: 73px;
 }
 
 header #wgnb .hlogo a{
     display: inline-block;
     width: 140px;
-    height: 88px;
+    height: 81px;
 
 }
 
@@ -41,7 +45,7 @@ header .gnb {
 
 header .gnb li{
     float: left;
-    width: 90px;
+    width: 92px;
     text-align: center;
     font-size: 15px;
     display: block;
@@ -81,19 +85,19 @@ header .hdec a {
     font-weight: bold;
 }
 
-header .util li{
-    float: left;
-    font-size: 0px;
-    text-indent: -9999px;
-}
 header .util{
     float: right;
     margin-top: 35px;
     margin-right: 25px;
+    margin-left: 10px
 }
 header .util li{
-    margin-right: 5px;
+    float: left;
+    font-size: 0px;
+    text-indent: -9999px;
+    margin-right: 9px;
 }
+
 header .util li a.search{
 
     font-size: 0px;
