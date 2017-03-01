@@ -102,7 +102,7 @@
 	width: 34px;
 	height: 34px;
 	border: 1px solid #fff;
-	background: url(../img/btn_pause_on.png) no-repeat 50% 50%;
+	background: url(../img/btn_pause.png) no-repeat 50% 50%;
 	vertical-align: top;
 	font-size: 0;
 	text-indent: -9999px;
@@ -159,13 +159,12 @@
 	background: url(../img/bg_section02.png) no-repeat center bottom;
 	background-size: 100%;
 }
-#body_Content .section2 .main_contents{
+#body_Content .main_contents{
 	width: 1000px;
 	margin: 0 auto;
 	padding: 90px 0 130px;
-	background: url(../img/txt_section02.png) no-repeat right 40px;
 }
-#body_Content .section2 .main_contents h3{
+#body_Content .main_contents h3{
 	font-size: 36px;
 	font-family: 'Arial';
 	text-align: center;
@@ -173,7 +172,7 @@
 	color: #fff;
 	text-shadow: 0px 0px 4px #000;
 }
-#body_Content .section2 .main_contents .sub{
+#body_Content .main_contents .sub{
 	font-size: 16px;
     font-weight: 700;
     text-align: center;
@@ -181,14 +180,11 @@
 	color: #fff;
 	text-shadow: 0px 0px 4px #000;
 }
-#body_Content .section2 .main_contents .sub{
-	font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    margin: 10px 0 38px 0;
-	color: #fff;
-	text-shadow: 0px 0px 4px #000;
+#body_Content .section2 .main_contents{
+
+	background: url(../img/txt_section02.png) no-repeat right 40px;
 }
+
 
 #body_Content .section2 .main_contents .issue_list{
 	overflow: hidden;
@@ -210,25 +206,26 @@
     overflow: hidden;
     border: 1px solid #25a449;
 }
-#body_Content .section2 .main_contents .issue_list ul li .img{
+#body_Content .section2 .main_contents .issue_list ul li a{
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-	background: #fff;
+
 }
-#body_Content .section2 .main_contents .issue_list ul li img{
+
+#body_Content .section2 .main_contents .issue_list ul li a img{
 	width: 100%;
 	height: 100%;
 
 }
-#body_Content .section2 .main_contents .issue_list ul li .icon{
+#body_Content .section2 .main_contents .issue_list ul li a .icon{
 	position: absolute;
     z-index: 3;
     left: 0;
     top: 0;
     background-color: #1b1b1b;
 }
-#body_Content .section2 .main_contents .issue_list ul li .title{
+#body_Content .section2 .main_contents .issue_list ul li a .title{
 	position: absolute;
 	z-index: 3;
 	left: 18px;
@@ -238,7 +235,7 @@
 	font-weight: 600;
 	letter-spacing: 0px;
 }
-#body_Content .section2 .main_contents .issue_list ul li .date{
+#body_Content .section2 .main_contents .issue_list ul li a .date{
 	position: absolute;
     z-index: 3;
     left: 18px;
@@ -249,7 +246,7 @@
     letter-spacing: 0px;
 }
 
-#body_Content .section2 .main_contents .issue_list ul li .bgPatten{
+#body_Content .section2 .main_contents .issue_list ul li a .bgPatten{
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -257,6 +254,30 @@
 	width: 100%;
 	height: 100%;
 	background: url(../img/bg_related_patten.png) repeat-x 0 100%;
+}
+
+#body_Content .section2 .main_contents .issue_Btn{
+	width: 1000px;
+	margin: 0 auto;
+	text-align: right;
+}
+#body_Content .section2 .main_contents .issue_Btn .btnWhite{
+	display: inline-block;
+
+    height: 36px;
+    padding: 0 35px 0 38px;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #252525;
+    text-align: center;
+}
+#body_Content .section2 .main_contents .issue_Btn .btnWhite .confirm{
+	display: inline-block;
+	padding: 0 22px 0 0;
+	background: url(../img/icon_arror01.png) no-repeat right 50%;
 }
 
 
@@ -273,6 +294,13 @@
     background: #222328 url(../img/bg_section04.png) no-repeat center bottom;
     background-size: 100%;
 }
+#body_Content .section3 .main_contents{
+
+	background: url(../img/txt_section03.png) no-repeat left 40px;
+}
+
+
+
 
 
 
