@@ -5,6 +5,7 @@
 	width: 100%;
 	height: 100%;
 	margin-top: 81px;
+	margin: 0 0 -105px;
 }
 
 /*section1*/
@@ -428,6 +429,7 @@
 
 }
 #body_Content .section4 .main_contents{
+	background: url(../img/txt_section04.png) no-repeat right 40px;
 	padding: 90px 0 180px;
 }
 #body_Content .section4 .main_contents h3{
@@ -637,9 +639,51 @@
 /*section5*/
 #body_Content .section5{
 	position: relative;
-	height: 100%;
-	height: 833px;
 	width: 100%;
     background: #fff;
     padding-bottom: 100px;
+}
+#body_Content .section5 .main_contents{
+	background: url(../img/txt_section05.png) no-repeat left 40px;
+	padding: 90px 0 180px;
+}
+#body_Content .section5 .main_contents h3{
+	text-shadow: none;
+	color: #000
+}
+#body_Content .section5 .main_contents p{
+	text-shadow: none;
+	color: #000
+}
+#body_Content .section5 .main_contents .business_list{
+	overflow: hidden;
+    width: 102%;
+}
+#body_Content .section5 .main_contents .business_list li{
+	float: left;
+	width: 493px;
+	height: 251px;
+	margin: 0 14px 14px 0;
+	overflow: hidden;
+}
+#body_Content .section5 .main_contents .business_list li a{
+	display: block;
+	position: relative;
+	font-weight: 700;
+}
+#body_Content .section5 .main_contents .business_list li .title{
+	position: absolute;
+	z-index: 3;
+	left: 23px;
+	bottom: 21px;
+	color: #ffffff;
+	font-size: 15px;
+}
+#body_Content .section5 .main_contents .business_list li .title em{
+	font-size: 24px;
+    display: block;
+    margin-bottom: 3px;
+    letter-spacing: -1px;
+	font-style: normal;
+
 }
