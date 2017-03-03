@@ -1,10 +1,114 @@
 footer{
 	position: relative;
 	z-index: 20;
-	height: 120px;
+	height: 116px;
 	font-size: 12px;
 	color: #a2a5b0;
 	background: #222328;
 	clear: both;
+	/*overflow: hidden;*/
+}
+footer .footer_box{
+    padding: 24px 0 15px 115px;
+    max-width: 895px;
+	height: 77px;
+    margin: 0 auto;
+    position: relative;
+    font-weight: 700;
+}
+footer .footer_box .footer_logo{
+	margin: 2px 0 0 -115px;
+	float: left;
+}
+footer .footer_box a{
+	color: #a2a5b0;
+}
+footer .footer_box .utill{
+	overflow: hidden;
+}
 
+footer .footer_box .utill li{
+	float: left;
+	background: url(../img/blt_bar01.png) no-repeat left center;
+	padding:0 7px;
+}
+footer .footer_box .utill li:first-child{
+	background: none;
+	padding:0 7px 0 0;
+}
+footer .footer_box address{
+	margin: 5px 0 10px 0;
+	line-height: 18px;
+}
+footer .footer_box address .tel{
+	padding-left: 15px;
+	background: url(../img/footer_tel.gif) no-repeat left center;
+}
+footer .footer_box .copyright{
+	display: block;
+	color: #5f6272;
+	font-size: 10px;
+	clear: both;
+	padding-top: 1px;
+}
+footer .footer_box .family_site{
+	position: absolute;
+	top: 21px;
+	right: 0;
+}
+footer .footer_box .family_site .btn_family{
+	float: left;
+	display: block;
+    width: 145px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #656569;
+    padding: 0 0 0 15px;
+    margin-right: 7px;
+    font-family: 'Arial';
+    text-transform: uppercase;
+    background: url(../img/blt_up.png) no-repeat 140px center;
+}
+footer .footer_box .family_site .family_list{
+	position: absolute;
+	top: -140px;
+	left: 0;
+}
+footer .footer_box .family_site .family_list{
+	width: 160px;
+    border: 1px solid #656569;
+    background: #fff;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+	line-height: 34px;
+}
+footer .footer_box .family_site .family_list li a{
+	display: block;
+    padding: 0 0 0 15px;
+    color: #000;
+    font-size: 13px;
+	font-weight: 400;
+}
+
+footer .footer_box .family_site .submit{
+	float: right;
+	width: 51px;
+	height: 34px;
+	display: block;
+	font-size: 0;
+	background: url(../img/btn_go.gif) no-repeat;
+}
+footer .footer_box .family_site .sns_icon{
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+footer .footer_box .family_site .sns_icon li{
+	float: left;
+}
+footer .footer_box .family_site .label_box{
+	position: absolute;
+	top: 0;
+	left: -160px;
 }

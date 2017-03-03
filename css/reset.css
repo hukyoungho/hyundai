@@ -48,3 +48,6 @@ li img, dd img{
 input{
     vertical-align: middle;
 }
+em, address{
+	font-style: normal;
+}
