@@ -129,3 +129,63 @@ $(function(){
         console.log(idx_1);
     })
 });
+
+
+//section4
+
+
+
+var pos = ['0px','-632px', '-1264px', '-1896px', '-2528px'];
+function movement_2(i){
+    $('.section4 .slider').css({
+        'transform':'translate3d('+pos[i]+', 0px, 0px)'
+    })
+
+}
+
+    $(function(){
+    $('.section4 .view_control li').click(function(){
+        idx=$(this).index();
+        movement_2(idx);
+        // console.log(1);
+        $(this).css({
+            'background':'url(img/slider_nav_on02.png) no-repeat 50% 50%'
+        }).siblings().css({
+            'background':'url(img/slider_nav02.png) no-repeat 50% 50%'
+        })
+    });
+
+
+})
+
+
+
+
+//navbar
+$(function(){
+$('.navbar li').click(function(){
+    idx=$(this).index();
+    $(this).find('img').css({
+        'display':'block',
+
+    }).parent().parent().siblings().find('img').css({
+        'display':'none',
+
+    });
+    $(this).find('a').css({
+        'border-bottom': '2px solid #000',
+        'padding-bottom': '3px',
+        'height':'auto'
+
+    }).parent().siblings().find('a').css({
+        'border-bottom': '2px solid #000',
+        'padding-bottom': 'none',
+        'height':'10px'
+
+
+    });
+
+});
+
+
+});
