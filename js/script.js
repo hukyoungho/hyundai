@@ -3,7 +3,8 @@
 var idx = 0;
 function movement(start, end ,i){
     $('.slidebanner li').eq(i).css({
-        'left':start
+        'left':start,
+        'display':'block'
     }).stop().animate({
         'left':end
     },1000);
@@ -17,28 +18,29 @@ function movement(start, end ,i){
     }
 }
 
-$(function(){
-$('.section1 #prev').click(function(e){
-e.preventDefault();
-var stat = $('.section1 #slide_num #num').text();
-var num = parseInt(stat,10);
-num--;
-if(num<=0){
-num =5;
-}
-$('.section1 #slide_num #num').text(num);
-});
-$('.section1 #next').click(function(e){
-e.preventDefault();
-var stat = $('.section1 #slide_num #num').text();
-var num = parseInt(stat,10);
-num++;
 
-if(num>5){
-num=1;
-}
-$('.section1 #slide_num #num').text(num);
-});
+$(function(){
+  $('.section1 #prev').click(function(e){
+  e.preventDefault();
+  var stat = $('.section1 #slide_num #num').text();
+  var num = parseInt(stat,10);
+  num--;
+  if(num<=0){
+  num =5;
+  }
+  $('.section1 #slide_num #num').text(num);
+  });
+  $('.section1 #next').click(function(e){
+  e.preventDefault();
+  var stat = $('.section1 #slide_num #num').text();
+  var num = parseInt(stat,10);
+  num++;
+
+  if(num>5){
+  num=1;
+  }
+  $('.section1 #slide_num #num').text(num);
+  });
 });
 
 
@@ -163,29 +165,25 @@ function movement_2(i){
 
 //navbar
 $(function(){
-$('.navbar li').click(function(){
-    idx=$(this).index();
-    $(this).find('img').css({
-        'display':'block',
+  $('.navbar li').click(function(){
+      idx=$(this).index();
+      $(this).find('img').css({
+          'display':'block',
 
-    }).parent().parent().siblings().find('img').css({
-        'display':'none',
+      }).parent().parent().siblings().find('img').css({
+          'display':'none',
 
-    });
-    $(this).find('a').css({
-        'border-bottom': '2px solid #000',
-        'padding-bottom': '3px',
-        'height':'auto'
+      });
+      $(this).find('a').css({
+          'border-bottom': '2px solid #000',
+          'padding-bottom': '3px',
+          'height':'auto'
+      }).parent().siblings().find('a').css({
+          'border-bottom': '2px solid #000',
+          'padding-bottom': 'none',
+          'height':'10px'
+      });
 
-    }).parent().siblings().find('a').css({
-        'border-bottom': '2px solid #000',
-        'padding-bottom': 'none',
-        'height':'10px'
-
-
-    });
-
-});
-
+  });
 
 });
