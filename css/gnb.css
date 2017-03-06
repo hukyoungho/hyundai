@@ -1,8 +1,8 @@
 header{
-    height: 81px;
+    /*height: 81px;*/
     width: 100%;
     position: fixed;
-    z-index: 50;
+    z-index: 100;
     background: #fff;
     top: 0px;
 }
@@ -10,7 +10,7 @@ header #wgnb{
     min-width: 1040px;
     max-width: 1040px;
     width: 100%;
-    height: 81px;
+    /*height: 81px;*/
     line-height: 81px;
     /*background: powderblue;*/
     margin: 0 auto;
@@ -124,4 +124,42 @@ header .util li a.lang{
     display: block;
     background: url(../img/top_en.png) no-repeat ;
     cursor: pointer;
+}
+
+.depth_gnb {
+    position: fixed;
+    z-index: 31;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    height: 208px;
+    background: #1c1d21;
+    opacity: 0.95;
+    display: none;
+}
+.depth_gnb_box{
+    width: 100%;
+    min-width: 1040px;
+    max-width: 1040px;
+    margin: 0 auto;
+
+}
+.depth_gnb ul:nth-child(1){
+
+    margin-left: 180px;
+}
+.depth_gnb ul{
+    float: left;
+    text-align: center;
+    margin-right: 38px;
+
+}
+.depth_gnb ul li{
+    margin-bottom: 5px!important;
+}
+
+.depth_gnb ul li a{
+    color: #fff;
+    font-size: 12px;
+
 }

@@ -1,3 +1,53 @@
+//gnb
+$(document).ready(function() {
+                $('header').click(function() {
+                    $(this).find('.depth_gnb').slideToggle(1000);
+                })
+            })
+
+
+
+
+$(document).ready(function() {
+
+
+    $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        // console.log(st);
+
+
+            //  console.log($('#body_Content section:eq('+i+')').offset().top);
+            if(st >= 600){
+                console.log(1);
+                $('header #wgnb').stop().animate({
+                    'line-height':'51px'
+                },500);
+                $('header #wgnb .hlogo').stop().css({
+                    'height':'43px'
+                },500);
+                $('header #wgnb .hlogo a').stop().css({
+                    'height':'43px'
+                },500);
+                $('header .gnb li a').stop().animate({
+                    'height':'50px'
+                },500);
+                $('header .hdec').stop().animate({
+                    'margin-top':'10px'
+                },500);
+                $('header .util').stop().animate({
+                    'margin-top':'17px'
+                },500);
+
+        }
+    })
+
+
+});
+
+
+
+
+
 
 //section1
 var idx = 0;
@@ -185,5 +235,47 @@ $(function(){
       });
 
   });
+
+});
+
+
+$(document).ready(function() {
+
+    $('.navbar a').click(function(){
+      var idx = $(this).parent().index();
+      var move = $('#body_Content section:eq('+idx+')').offset().top;
+      $('body,html').animate({
+         scrollTop:move
+      })
+  });
+    $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        // console.log(st);
+        console.log()
+        for(var i=0; i<5; i++){
+            //  console.log($('#body_Content section:eq('+i+')').offset().top);
+            if(st >= $('#body_Content section:eq('+i+')').offset().top){
+                // console.log(1);
+                $('.navbar li').eq(i).find('img').css({
+                    'display':'block',
+
+                }).parent().parent().siblings().find('img').css({
+                    'display':'none',
+
+                });
+                $('.navbar li').eq(i).find('a').css({
+                    'border-bottom': '2px solid #000',
+                    'padding-bottom': '3px',
+                    'height':'auto'
+                }).parent().siblings().find('a').css({
+                    'border-bottom': '2px solid #000',
+                    'padding-bottom': 'none',
+                    'height':'10px'
+                });
+            }
+        }
+    })
+
+
 
 });
