@@ -69,20 +69,26 @@ footer .footer_box .family_site .btn_family{
     text-transform: uppercase;
     background: url(../img/blt_up.png) no-repeat 140px center;
 }
-
-footer .footer_box .family_site .family_list{
+footer .footer_box .family_site .family_list_box {
 	position: absolute;
+	width: 160px;
+	height: 140px;
 	top: -140px;
 	left: 0;
+	overflow: hidden;
+}
+footer .footer_box .family_site .family_list_box .family_list{
+	position: absolute;
+	top: 140px;
 	width: 160px;
     border: 1px solid #656569;
     background: #fff;
     letter-spacing: -1px;
     word-spacing: -1px;
 	line-height: 34px;
-	display: none;
+
 }
-footer .footer_box .family_site .family_list li a{
+footer .footer_box .family_site .family_list_box .family_list li a{
 	display: block;
     padding: 0 0 0 15px;
     color: #000;

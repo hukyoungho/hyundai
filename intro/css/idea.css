@@ -6,7 +6,6 @@
 
 #body_Content{
     margin: 81px 0 -105px;
-    height: 100%;
     background: powderblue;
 }
 
@@ -16,7 +15,7 @@
     background: blue;
 }
 #body_Content .section1 .bg_img{
-    background-image: url(../img/bg_company_01.jpg);
+    background-image: url(../../img/bg_company_01.jpg);
     text-align: center;
     position: relative;
     height: 440px;
@@ -31,7 +30,7 @@
    height: 200px;
    width: 100%;
    overflow: hidden;
-   background: url(../img/bg_diagonal_01.png) no-repeat center bottom;
+   background: url(../../img/bg_diagonal_01.png) no-repeat center bottom;
    background-size: cover;
 
 }
