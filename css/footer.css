@@ -69,18 +69,18 @@ footer .footer_box .family_site .btn_family{
     text-transform: uppercase;
     background: url(../img/blt_up.png) no-repeat 140px center;
 }
+
 footer .footer_box .family_site .family_list{
 	position: absolute;
 	top: -140px;
 	left: 0;
-}
-footer .footer_box .family_site .family_list{
 	width: 160px;
     border: 1px solid #656569;
     background: #fff;
     letter-spacing: -1px;
     word-spacing: -1px;
 	line-height: 34px;
+	display: none;
 }
 footer .footer_box .family_site .family_list li a{
 	display: block;
@@ -89,6 +89,7 @@ footer .footer_box .family_site .family_list li a{
     font-size: 13px;
 	font-weight: 400;
 }
+
 
 footer .footer_box .family_site .submit{
 	float: right;
@@ -111,4 +112,7 @@ footer .footer_box .family_site .label_box{
 	position: absolute;
 	top: 0;
 	left: -160px;
+}
+footer .footer_box .utill a:hover{
+    color: #fff;
 }

@@ -2,10 +2,13 @@
 
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
 body,h1,h2,h3,h4,input,button {
 	font-family:Nanum Gothic,'나눔고딕', sans-serif; color:#000;
 }
+
 
 html, body{
 	width: 100%;

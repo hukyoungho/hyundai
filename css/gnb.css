@@ -65,7 +65,7 @@ header .gnb li a{
 }
 header .gnb li a:hover{
     color: #25a449;
-    border-bottom: 4px solid #25a449;
+    border-bottom: 3px solid #25a449;
     box-sizing: border-box;
 }
 
@@ -73,13 +73,14 @@ header .hdec{
     float: left;
     margin-top: 27px;
     margin-left: 25px;
+    border: 1px solid #25a449;
 }
 
 header .hdec a {
-    border: 1px solid #25a449;
-    width: 81px;
-    height: 25px;
-    line-height: 25px;
+    border: 2px solid #fff;
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
     display: block;
     overflow: hidden;
     white-space: nowrap;
@@ -90,6 +91,12 @@ header .hdec a {
     padding: 1px 7px 1px 8px;
     font-size: 14px;
     font-weight: bold;
+    transition: all 0.35s ease;
+}
+header .hdec a:hover {
+    border: 2px solid #25a449;
+
+
 }
 
 header .util{
@@ -115,6 +122,11 @@ header .util li a.search{
     background: url(../img/icon_utillTop_01.png) no-repeat right top;
     cursor: pointer;
 }
+header .util li a.search:hover{
+
+    background: url(../img/icon_utillTop_01_on.png) no-repeat right top;
+
+}
 header .util li a.lang{
 
     font-size: 0px;
@@ -124,6 +136,11 @@ header .util li a.lang{
     display: block;
     background: url(../img/top_en.png) no-repeat ;
     cursor: pointer;
+}
+header .util li a.lang:hover{
+
+    background: url(../img/top_en_on.png) no-repeat ;
+
 }
 
 .depth_gnb {
@@ -137,29 +154,72 @@ header .util li a.lang{
     opacity: 0.95;
     display: none;
 }
+
 .depth_gnb_box{
     width: 100%;
     min-width: 1040px;
     max-width: 1040px;
-    margin: 0 auto;
+    margin: 9px auto 0px;
 
 }
-.depth_gnb ul:nth-child(1){
-
-    margin-left: 180px;
+.depth_gnb .depth_gnb_box ul:nth-child(1){
+    margin-left: 166px;
 }
-.depth_gnb ul{
+.depth_gnb .depth_gnb_box ul{
     float: left;
     text-align: center;
-    margin-right: 38px;
+    margin-right: 4px;
 
 }
-.depth_gnb ul li{
+.depth_gnb .depth_gnb_box ul li{
     margin-bottom: 5px!important;
+    width: 90px;
 }
 
-.depth_gnb ul li a{
-    color: #fff;
+
+.depth_gnb .depth_gnb_box ul li a{
+    color: #707070;
     font-size: 12px;
 
+}
+.depth_gnb .depth_gnb_box ul li a:hover{
+    color: #00a22e !important;
+
+}
+
+.depth_gnb .x_box{
+    display: block;
+    position: absolute;
+    z-index: 50;
+    right: 33px;
+    bottom: 22px;
+    width: 57px;
+    height: 9px;
+    cursor: pointer;
+    background: url(../img/btn_close.png) no-repeat left top;
+}
+
+.depth_gnb .subTxt_box ul{
+    background: url(../img/blt_bar02.png) no-repeat;
+    background-position-x: 65px;
+    background-position-y: 10px;
+    width: 127px;
+    height: 32px;
+    position: relative;
+    left: 65px;
+    top: 1px;
+}
+.depth_gnb .subTxt_box ul li{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.depth_gnb .subTxt_box ul li.on{
+    display: block;
+}
+.depth_gnb .subTxt_box ul li em{
+    color: #707070;
+    font-size: 11px;
 }

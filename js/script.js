@@ -1,9 +1,37 @@
 //gnb
-$(document).ready(function() {
-                $('header').click(function() {
-                    $(this).find('.depth_gnb').slideToggle(1000);
-                })
+
+var navEvent = {
+    mouse:function(){
+        var over = function(){
+            var idx = $(this).index();
+            console.log(idx);
+            $('.depth_gnb .subTxt_box ul li').eq(idx).addClass('on').siblings().removeClass();
+            $('.depth_gnb .depth_gnb_box ul').eq(idx).find('a').css('color','#aaa').parent().parent().siblings().find('a').css('color','#707070');
+            $('header .gnb li').eq(idx).find('a').css({
+                color: '#25a449',
+                'border-bottom': '4px solid #25a449',
+                'box-sizing': 'border-box'
+            }).parent().siblings().find('a').css({
+                color: '#000',
+                'border-bottom': 'none',
+                'box-sizing': 'none'
             })
+        }
+
+        $('.depth_gnb .depth_gnb_box ul').on({
+            mouseenter:over
+        })
+    }
+}
+
+
+$(document).ready(function() {
+        navEvent.mouse();
+        $('header').click(function() {
+            $(this).find('.depth_gnb').slideToggle(1000);
+        })
+    })
+
 
 
 
@@ -43,6 +71,7 @@ $(document).ready(function() {
 
 
 });
+
 
 
 
@@ -211,6 +240,20 @@ function movement_2(i){
 })
 
 
+//footer
+
+
+$(document).ready(function() {
+        $('footer .btn_family').click(function() {
+            $('footer .family_list').slideDown("slow");
+            $('footer .family_site .btn_family').css({
+                background:'url(img/blt_down.png) no-repeat 140px center'
+            })
+
+        })
+    })
+
+
 
 
 //navbar
@@ -254,13 +297,13 @@ $(document).ready(function() {
         console.log()
         for(var i=0; i<5; i++){
             //  console.log($('#body_Content section:eq('+i+')').offset().top);
-            if(st >= $('#body_Content section:eq('+i+')').offset().top){
+            if(st >= $('#body_Content section:eq('+i+')').offset().top-200){
                 // console.log(1);
                 $('.navbar li').eq(i).find('img').css({
-                    'display':'block',
+                    'display':'block'
 
                 }).parent().parent().siblings().find('img').css({
-                    'display':'none',
+                    'display':'none'
 
                 });
                 $('.navbar li').eq(i).find('a').css({
@@ -275,7 +318,6 @@ $(document).ready(function() {
             }
         }
     })
-
 
 
 });

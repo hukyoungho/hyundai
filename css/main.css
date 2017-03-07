@@ -159,6 +159,11 @@
 	background: url(../img/btn_play_over.png) no-repeat 50% 50%;
 	background-size: cover;
 }
+#body_Content .section1 .slide_control .btn_play .start:active{
+
+	background: url(../img/btn_play_on.png) no-repeat 50% 50%;
+	background-size: cover;
+}
 #body_Content .section1 .slide_control .btn_play .stop{
 	display: inline-block;
 	width: 34px;
@@ -172,6 +177,11 @@
 #body_Content .section1 .slide_control .btn_play .stop:hover{
 
 	background: url(../img/btn_pause_over.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+#body_Content .section1 .slide_control .btn_play .stop:active{
+
+	background: url(../img/btn_pause_on.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 
