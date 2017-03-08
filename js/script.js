@@ -26,9 +26,23 @@ var navEvent = {
 
 
 $(document).ready(function() {
-        navEvent.mouse();
+            navEvent.mouse();
         $('header').click(function() {
-            $(this).find('.depth_gnb').slideToggle(1000);
+            var st = $(window).scrollTop();
+
+            if(st >= 600 && $('header #wgnb').is('.fix')){
+                $(this).find('.depth_gnb').css({
+                    top: '45px'
+                })
+                $(this).find('.depth_gnb').slideToggle(1000);
+                console.log('1');
+            }
+            else if(st <= 599 && !$('header #wgnb').is('.fix')){
+                $(this).find('.depth_gnb').css({
+                    top: '80px'
+                })
+                $(this).find('.depth_gnb').slideToggle(1000);
+            }
         })
     })
 
@@ -41,19 +55,17 @@ $(document).ready(function() {
 
     $(window).scroll(function(){
         var st = $(window).scrollTop();
-        console.log(st);
 
-
-            //  console.log($('#body_Content section:eq('+i+')').offset().top);
-        if(st >= 600 && st <= 610){
-            console.log(1);
+        if(st >= 600 && !$('header #wgnb').is('.fix')){
+            $('header #wgnb').addClass('fix')
+            // console.log(1);
             $('header #wgnb').stop().animate({
                 'line-height':'51px'
             },500);
-            $('header #wgnb .hlogo').stop().css({
+            $('header #wgnb .hlogo').stop().animate({
                 'height':'43px'
             },500);
-            $('header #wgnb .hlogo a').stop().css({
+            $('header #wgnb .hlogo a').stop().animate({
                 'height':'43px'
             },500);
             $('header .gnb li a').stop().animate({
@@ -66,15 +78,16 @@ $(document).ready(function() {
                 'margin-top':'17px'
             },500);
         }
-        if(st <= 590 && st >=560){
-            console.log(2);
+        else if(st <= 599 && $('header #wgnb').is('.fix')){
+            $('header #wgnb').removeClass('fix')
+            // console.log(2);
             $('header #wgnb').stop().animate({
                 'line-height':'81px'
             },500);
-            $('header #wgnb .hlogo').stop().css({
+            $('header #wgnb .hlogo').stop().animate({
                 'height':'73px'
             },500);
-            $('header #wgnb .hlogo a').stop().css({
+            $('header #wgnb .hlogo a').stop().animate({
                 'height':'81px'
             },500);
             $('header .gnb li a').stop().animate({
@@ -88,6 +101,7 @@ $(document).ready(function() {
             },500);
         }
     })
+    $(window).trigger('scroll')
 
 
 });
@@ -263,6 +277,7 @@ function movement_2(i){
 //footer
 
 
+
 $(document).ready(function() {
         $('footer .btn_family').click(function() {
             $('footer .family_site .btn_family').css({
@@ -271,6 +286,15 @@ $(document).ready(function() {
             $('footer .family_site .family_list_box .family_list').stop().animate({
                 top:'0px'
             },1000)
+
+            var list_pos = $('footer .family_site .family_list_box .family_list').css("top").replace(/[^-\d\.]/g, '');
+            // console.log(list_pos);
+            if(list_pos == 0 ){
+                $('footer .family_site .family_list_box .family_list').stop().animate({
+                    top:'140px'
+                },1000);
+                // console.log(list_pos);
+            }
             // 다시 들어가기 위해서는 if 문을 이용해 집어 넣어보자
 
         })

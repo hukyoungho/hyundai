@@ -41,51 +41,50 @@ $(document).ready(function() {
 
     $(window).scroll(function(){
         var st = $(window).scrollTop();
-        console.log(st);
 
 
             //  console.log($('#body_Content section:eq('+i+')').offset().top);
-        if(st >= 600 && st <= 610){
-            console.log(1);
+        if(st >= 600){
+            // console.log(1);
             $('header #wgnb').stop().animate({
                 'line-height':'51px'
-            },500);
+            },100);
             $('header #wgnb .hlogo').stop().css({
                 'height':'43px'
-            },500);
+            },100);
             $('header #wgnb .hlogo a').stop().css({
                 'height':'43px'
-            },500);
+            },100);
             $('header .gnb li a').stop().animate({
                 'height':'50px'
-            },500);
+            },100);
             $('header .hdec').stop().animate({
                 'margin-top':'10px'
-            },500);
+            },100);
             $('header .util').stop().animate({
                 'margin-top':'17px'
-            },500);
+            },100);
         }
-        if(st <= 590 && st >=560){
-            console.log(2);
+        if(st <= 599){
+            // console.log(2);
             $('header #wgnb').stop().animate({
                 'line-height':'81px'
-            },500);
+            },100);
             $('header #wgnb .hlogo').stop().css({
                 'height':'73px'
-            },500);
+            },100);
             $('header #wgnb .hlogo a').stop().css({
                 'height':'81px'
-            },500);
+            },100);
             $('header .gnb li a').stop().animate({
                 'height':'81px'
-            },500);
+            },100);
             $('header .hdec').stop().animate({
                 'margin-top':'27px'
-            },500);
+            },100);
             $('header .util').stop().animate({
                 'margin-top':'35px'
-            },500);
+            },100);
         }
     })
 
@@ -271,11 +270,18 @@ $(document).ready(function() {
             $('footer .family_site .family_list_box .family_list').stop().animate({
                 top:'0px'
             },1000)
+
+            var list_pos = $('footer .family_site .family_list_box .family_list').attr('top');
+            console.log(list_pos);
             // 다시 들어가기 위해서는 if 문을 이용해 집어 넣어보자
 
         })
 
     })
+
+
+
+
 
 
 

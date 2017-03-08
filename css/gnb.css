@@ -223,3 +223,41 @@ header .util li a.lang:hover{
     color: #707070;
     font-size: 11px;
 }
+
+
+
+/*navbar*/
+
+
+#body_Content .navbar{
+	position: fixed;
+    top: 50%;
+    right: 30px;
+    width: 23px;
+    z-index: 100;
+}
+
+#body_Content .navbar ul{
+	position: fixed;
+    top: 50%;
+    right: 30px;
+    width: 23px;
+    z-index: 100;
+}
+#body_Content .navbar ul li{
+}
+
+#body_Content .navbar li:first-child {
+    border-top: 2px solid #000;
+}
+#body_Content .navbar li a {
+    display: inline-block;
+    width: 100%;
+	height: 10px;
+    border-bottom: 2px solid #000;
+	vertical-align: top;
+}
+#body_Content .navbar li a img {
+    display: none;
+
+}

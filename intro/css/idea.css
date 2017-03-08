@@ -6,13 +6,12 @@
 
 #body_Content{
     margin: 81px 0 -105px;
-    background: powderblue;
+
 }
 
 
 #body_Content .section1{
     width: 100%;
-    background: blue;
 }
 #body_Content .section1 .bg_img{
     background-image: url(../../img/bg_company_01.jpg);
@@ -38,7 +37,6 @@
 #body_Content .section1 .bg_img .sub_title_box{
     padding-top: 73px;
     width: 1000px;
-    border: 1px solid red;
     margin: 0 auto;
 }
 #body_Content .section1 .bg_img .sub_title_box h3{
@@ -76,20 +74,24 @@
 
 
 
+
+
+/*section2*/
+
 #body_Content .section2{
-    display: block;
     width: 1000px;
     margin: 0 auto 105px;
-    background: pink;
     overflow: hidden;
+
 }
+
+
 
 #body_Content .section2>div{
     float: left;
 }
 
 #body_Content .section2 #lnb{
-    top: 440px;
     width: 160px;
 }
 #body_Content .section2 #lnb h2{
@@ -99,6 +101,10 @@
     width: 86px;
     padding-bottom: 16px;
     letter-spacing: -1px;
+}
+#body_Content .section2 #lnb ul{
+    margin-top: 16px;
+
 }
 #body_Content .section2 #lnb ul li a{
     display: inline-block;
@@ -116,13 +122,352 @@
     width: 830px;
 }
 
+#body_Content .section2 .contents .subtit{
+    height: 70px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+}
+#body_Content .section2 .contents .subtit span{
+    font-family: 'Arial';
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
 
+#body_Content .section2 .contents .headtext{
+    margin-bottom: 22px;
+    font-size: 32px;
+    color: #252525 !important;
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 36px;
+    letter-spacing: -3px;
+    word-spacing: -1px;
+    font-weight: 400;
 
-#body_Content .section2 .contents{
+}
+
+#body_Content .section2 .contents .ceotext{
+    font-size: 15px;
+    line-height: 24px;
 
 }
 
 
-#body_Content .section3{
+#body_Content .section2 .contents .ceotext p {
+    margin-top: 10px;
+    color: #555;
+}
 
+#body_Content .section2 .contents .ceoImg  {
+
+    overflow: hidden;
+    margin-top: -5px;
+    border-bottom: 1px solid #dbdbdb;
+
+}
+
+#body_Content .section2 .contents .ceoImg  .img{
+    float: right;
+    vertical-align: bottom;
+}
+#body_Content .section2 .contents .ceoImg  .sign span{
+    margin: 20px 20px 0 0;
+    color: #555;
+}
+
+
+#body_Content .section2 .contents .ceoImg  .sign{
+    margin-top: 165px;
+    float: left;
+
+}
+
+
+
+
+
+
+
+
+/*seciont3*/
+#body_Content .section3{
+    width: 1000px;
+    margin: 80px auto 0;
+    padding-top: 80px;
+    overflow: hidden;
+    background: url(../../img/blt_bar03.gif) no-repeat 0 0;
+    position: relative;
+    left: 171px;
+}
+#body_Content .section3 .subtit{
+    height: 70px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+}
+#body_Content .section3 .mindTitle{
+
+}
+
+#body_Content .section3 .mindTitle .headtext{
+    font-family: 'Nanum Myeongjo', serif;
+
+    font-size: 32px;
+    color: #000;
+    letter-spacing: -3px;
+    word-spacing: -1px;
+    font-weight: 400;
+}
+#body_Content .section3 .mindTitle p{
+    margin-top: 23px;
+    font-size: 18px;
+    color: #555;
+    letter-spacing: -0.5px;
+}
+
+#body_Content .section3 .mindList{
+    position: relative;
+    height: 182px;
+    margin-top: 56px;
+    padding: 117px 0 0 0;
+    background: url(../../img/bg_mind.png) no-repeat 0 0;
+}
+#body_Content .section3 .mindList li{
+    position: absolute;
+}
+
+#body_Content .section3 .mindList li > dl{
+    width: 215px;
+    text-align: center;
+}
+
+#body_Content .section3 .mindList li dt{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #252525;
+}
+#body_Content .section3 .mindList li dt span.eng{
+    display: block;
+    margin-bottom: 9px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Arial';
+    letter-spacing: 0px;
+}
+#body_Content .section3 .mindList li dt span:not(.eng){
+    font-weight: 600 ;
+}
+#body_Content .section3 .mindList li:nth-child(1) dt span.eng{
+
+    color: #45ac56;
+
+}
+#body_Content .section3 .mindList li:nth-child(2) dt span.eng{
+
+    color: #45abac;
+}
+#body_Content .section3 .mindList li:nth-child(3) dt span.eng{
+
+    color: #4593ac;
+}
+
+
+#body_Content .section3 .mindList li dd{
+    font-size: 13px;
+    line-height: 18px;
+    color: #555;
+    letter-spacing: -1px;
+}
+
+
+#body_Content .section3 .mindList li:nth-child(1){
+    left: 40px;
+}
+
+#body_Content .section3 .mindList li:nth-child(2){
+    left: 309px;
+}
+
+#body_Content .section3 .mindList li:nth-child(3){
+    left: 575px;
+}
+
+
+
+
+/*section4*/
+
+
+#body_Content .section4{
+    width: 830px;
+    margin: 80px auto 105px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    background: url(../../img/blt_bar03.gif) no-repeat 0 0;
+    position: relative;
+    left: 71px;
+}
+
+#body_Content .section4 .subtit{
+    height: 70px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+}
+#body_Content .section4 .contents_box .headtext {
+    font-size: 36px;
+    font-family: 'Arial';
+    text-transform: uppercase;
+}
+#body_Content .section4 .contents_box > p{
+    margin-top: 31px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #555;
+}
+
+#body_Content .section4 .contents_box .buildList_01{
+    margin-top: 43px;
+}
+
+#body_Content .section4 .contents_box .buildList_01 li{
+    margin-top: 21px;
+    overflow: hidden;
+}
+#body_Content .section4 .contents_box .buildList_01 li>span{
+    float: left;
+    display: block;
+    width: 120px;
+    margin: 1px 50px 0 0;
+    padding-bottom: 7px;
+    font-family: 'Arial';
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0px;
+}
+#body_Content .section4 .contents_box .buildList_01 li:nth-child(1)>span{
+    border-bottom: 5px solid #31a344;
+}
+#body_Content .section4 .contents_box .buildList_01 li:nth-child(2)>span{
+    border-bottom: 5px solid #31a2a3;
+}
+#body_Content .section4 .contents_box .buildList_01 li:nth-child(3)>span{
+    border-bottom: 5px solid #3187a3;
+}
+#body_Content .section4 .contents_box .buildList_01 li:nth-child(4)>span{
+    border-bottom: 5px solid #4172af;
+
+}
+
+
+#body_Content .section4 .contents_box .buildList_01 li dl{
+    float: left;
+    width: 660px;
+    color: #555;
+}
+
+
+#body_Content .section4 .contents_box .buildList_01 li dl dt{
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+#body_Content .section4 .contents_box .headtext_1{
+    margin-top: 31px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #333;
+}
+
+#body_Content .section4 .contents_box .buildList_02{
+    position: relative;
+    height: 248px;
+    padding: 88px 0 60px;
+    background: url(../../img/bg_build.png) no-repeat 0 0;
+    border-bottom: 1px solid #dbdbdb;
+    color: #000;
+}
+
+
+#body_Content .section4 .contents_box .buildList_02 li{
+    position: absolute;
+    width: 190px;
+}
+
+#body_Content .section4 .contents_box .buildList_02 li > span{
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    color: #fff;
+    font-family: 'Arial';
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-right: 19px;
+}
+
+#body_Content .section4 .contents_box .buildList_02 li:nth-child(2) > span{
+
+    margin-right: 7px;
+}
+#body_Content .section4 .contents_box .buildList_02 li:nth-child(1){
+    left:111px;
+}
+
+#body_Content .section4 .contents_box .buildList_02 li:nth-child(2){
+    left:340px;
+}
+
+#body_Content .section4 .contents_box .buildList_02 li:nth-child(3){
+    left:600px;
+}
+
+#body_Content .section4 .contents_box .buildList_02 li dl dt{
+    display: inline-block;
+    margin: 5px 0 5px 12px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+#body_Content .section4 .contents_box .buildList_02 li dl dd{
+    padding-left: 13px;
+    font-size: 13px;
+    line-height: 20px;
+    background: url(../../img/bul06.png) no-repeat 0 47%;
+}
+
+#body_Content .section4 .contents_box .buildList_03{
+    overflow: hidden;
+    margin-top: 36px;
+}
+#body_Content .section4 .contents_box .img{
+    float: left;
+    width: 170px;
+}
+#body_Content .section4 .contents_box .list{
+    float: right;
+    width: 660px;
+}
+#body_Content .section4 .contents_box .list dl{
+    margin-bottom: 21px;
+    color: #555;
+
+}
+
+#body_Content .section4 .contents_box .list dt{
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+#body_Content .section4 .contents_box .list dd{
+    font-size: 15px;
+    line-height: 24px;
 }

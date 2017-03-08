@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    html,body{
-        /*width: 100%;*/
-        height: 100%;
-    }
-    .pa{
-        width: 50%;
-        overflow: hidden;
-        background: red;
-    }
-    .pa>.ch{
-        width: 100%;
-        height: 10%;
-        background: powderblue;
-        position: absolute;
-    }
-    .pa1{
-        /*width: 100%;*/
-        height: 100%;
-        background: blue;
-    }
-    .pa2{
+        body {
+            margin: 0 0 0 0;
+            background-color: beige;
+        }
 
-        height: 10%;
-        background: green;
-        position: relative;
-        top:-10%;
-    }
+        #pageTop {
+            width: 100%;
+            height: 100px;
+            background-color: tan;
+        }
 
+        #pageArticle {
+            width: 100%;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0);
+        }
 
+        #siteDesc {
+            height: 500px;
+            background-color: black;
+            width: 1000px;
+            margin: auto;
+        }
     </style>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" >
+    <script type="text/javascript">
+        $.fn.scrollEvent = function(handler) {
+            this.on('wheel', function(e) {
+                handler(e);
+            });
+            this.on('keydown', function(e) {
+                if (e.which === 40) {
+                    handler(e);
+                }
+            });
+        };
 
+        $(document).ready(function() {
+            var headHeight = $('#pageTop').height();
+            window.scrollEvent
+            $(window).scrollEvent(function(e) {
+                if (headHeight > 50) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    headHeight = (headHeight - 30);
+                    $('#pageTop').css('height', headHeight);
+                }
+                $('#hello').html($(document).scrollTop() + "<br/>" + headHeight);
+                return false;
+            });
+        });
     </script>
 
 </head>
-<body>
-    <div class="pa">
-        <div class="ch"></div>
-    </div>
-    <div class="pa1">
-        <div class="ch"></div>
-    </div>
-    <div class="pa2">
-        <div class="ch"></div>
-    </div>
 
+<body>
+    <div id="pageTop"></div>
+    <div id="pageArticle">
+        <div class="siteDesc">
+            <p id="hello"></p>
+        </div>
+    </div>
 </body>
+
 </html>
