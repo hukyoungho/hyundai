@@ -10,8 +10,8 @@ header #wgnb{
     min-width: 1040px;
     max-width: 1040px;
     width: 100%;
-    /*height: 81px;*/
-    line-height: 81px;
+
+
     /*background: powderblue;*/
     margin: 0 auto;
 
@@ -26,7 +26,7 @@ header #wgnb h1 {
 
 header #wgnb .hlogo{
     float: left;
-    padding-top: 7px;
+
     margin-right: 25px;
     height: 73px;
 }
@@ -35,6 +35,11 @@ header #wgnb .hlogo a{
     display: inline-block;
     width: 140px;
     height: 81px;
+    line-height: 81px;
+
+}
+header #wgnb .hlogo a img{
+    vertical-align: middle;
 
 }
 
@@ -59,6 +64,7 @@ header .gnb li a{
     color: #000;
     display: inline-block;
     height: 81px;
+    line-height: 81px;
     width: 92px;
     transition: all 300ms;
 
@@ -119,12 +125,12 @@ header .util li a.search{
     width: 16px;
     height: 16px;
     display: block;
-    background: url(../img/icon_utillTop_01.png) no-repeat right top;
+    background: url(../img/common/icon_utillTop_01.png) no-repeat right top;
     cursor: pointer;
 }
 header .util li a.search:hover{
 
-    background: url(../img/icon_utillTop_01_on.png) no-repeat right top;
+    background: url(../img/common/icon_utillTop_01_on.png) no-repeat right top;
 
 }
 header .util li a.lang{
@@ -134,12 +140,12 @@ header .util li a.lang{
     width: 18px;
     height: 16px;
     display: block;
-    background: url(../img/top_en.png) no-repeat ;
+    background: url(../img/common/top_en.png) no-repeat ;
     cursor: pointer;
 }
 header .util li a.lang:hover{
 
-    background: url(../img/top_en_on.png) no-repeat ;
+    background: url(../img/common/top_en_on.png) no-repeat ;
 
 }
 
@@ -196,11 +202,11 @@ header .util li a.lang:hover{
     width: 57px;
     height: 9px;
     cursor: pointer;
-    background: url(../img/btn_close.png) no-repeat left top;
+    background: url(../img/common/btn_close.png) no-repeat left top;
 }
 
 .depth_gnb .subTxt_box ul{
-    background: url(../img/blt_bar02.png) no-repeat;
+    background: url(../img/common/blt_bar02.png) no-repeat;
     background-position-x: 65px;
     background-position-y: 10px;
     width: 127px;

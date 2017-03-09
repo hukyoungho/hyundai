@@ -72,7 +72,7 @@
 }
 #body_Content .section1 .slidebanner li:first-child .play_video span{
 	display: inline-block;
-	background: url(../img/icon_arror05.png) no-repeat left center;
+	background: url(../../img/main/icon_arror05.png) no-repeat left center;
 	padding-left: 18px;
 }
 
@@ -96,7 +96,7 @@
     height: 34px;
     border: 1px solid #fff;
     font-family: 'Arial';
-    background: url(../img/bg_alpha.png) repeat left top;
+    background: url(../../img/main/bg_alpha.png) repeat left top;
     font-size: 12px;
     line-height: 34px;
     text-align: center;
@@ -112,7 +112,7 @@
     width: 34px;
     height: 34px;
     border: 1px solid #fff;
-    background: url(../img/btn_rollPrev.png) no-repeat 50% 50%;
+    background: url(../../img/main/btn_rollPrev.png) no-repeat 50% 50%;
     vertical-align: top;
     font-size: 0;
     text-indent: -9999px;
@@ -121,7 +121,7 @@
 #body_Content .section1 .slide_control .slide_direction .prev:hover,
 #body_Content .section1 .slide_control .slide_direction .prev:active{
 
-    background: url(../img/btn_rollPrev_over.png) no-repeat 50% 50%;
+    background: url(../../img/main/btn_rollPrev_over.png) no-repeat 50% 50%;
 	background-size: cover;
 
 }
@@ -130,7 +130,7 @@
 	width: 34px;
 	height: 34px;
 	border: 1px solid #fff;
-	background: url(../img/btn_rollNext.png) no-repeat 50% 50%;
+	background: url(../../img/main/btn_rollNext.png) no-repeat 50% 50%;
 	vertical-align: top;
 	font-size: 0;
 	text-indent: -9999px;
@@ -138,7 +138,7 @@
 }
 #body_Content .section1 .slide_control .slide_direction .next:hover{
 
-    background: url(../img/btn_rollNext_over.png) no-repeat 50% 50%;
+    background: url(../../img/main/btn_rollNext_over.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 #body_Content .section1 .slide_control .btn_play {
@@ -149,19 +149,19 @@
 	width: 34px;
 	height: 34px;
 	border: 1px solid #fff;
-	background: url(../img/btn_play.png) no-repeat 50% 50%;
+	background: url(../../img/main/btn_play.png) no-repeat 50% 50%;
 	vertical-align: top;
 	font-size: 0;
 	text-indent: -9999px;
 }
 #body_Content .section1 .slide_control .btn_play .start:hover{
 
-	background: url(../img/btn_play_over.png) no-repeat 50% 50%;
+	background: url(../../img/main/btn_play_over.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 #body_Content .section1 .slide_control .btn_play .start:active{
 
-	background: url(../img/btn_play_on.png) no-repeat 50% 50%;
+	background: url(../../img/main/btn_play_on.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 #body_Content .section1 .slide_control .btn_play .stop{
@@ -169,19 +169,19 @@
 	width: 34px;
 	height: 34px;
 	border: 1px solid #fff;
-	background: url(../img/btn_pause.png) no-repeat 50% 50%;
+	background: url(../../img/main/btn_pause.png) no-repeat 50% 50%;
 	vertical-align: top;
 	font-size: 0;
 	text-indent: -9999px;
 }
 #body_Content .section1 .slide_control .btn_play .stop:hover{
 
-	background: url(../img/btn_pause_over.png) no-repeat 50% 50%;
+	background: url(../../img/main/btn_pause_over.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 #body_Content .section1 .slide_control .btn_play .stop:active{
 
-	background: url(../img/btn_pause_on.png) no-repeat 50% 50%;
+	background: url(../../img/main/btn_pause_on.png) no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -229,19 +229,19 @@
 	width: 100%;
 	position: relative;
 	z-index: 11;
-	background: #25a449 url(../img/bg_section03.png) no-repeat center bottom;
+	background: #25a449 url(../../img/main/bg_section03.png) no-repeat center bottom;
 	background-size: 100%;
 
 
 }
 #body_Content .section2 .top_line{
-	background: url(../img/bg_section02.png) no-repeat center bottom;
+	background: url(../../img/main/bg_section02.png) no-repeat center bottom;
 	background-size: 100%;
 }
 
 #body_Content .section2 .main_contents{
 
-	background: url(../img/txt_section02.png) no-repeat right 40px;
+	background: url(../../img/main/txt_section02.png) no-repeat right 40px;
 }
 
 
@@ -320,7 +320,7 @@
 	display: block;
 	width: 100%;
 	height: 100%;
-	background: url(../img/bg_related_patten.png) repeat-x 0 100%;
+	background: url(../../img/main/bg_related_patten.png) repeat-x 0 100%;
 }
 #body_Content .section2 .main_contents .issue_list ul li a .maskBottom{
 	/*content:"";*/
@@ -330,7 +330,7 @@
 	top:0px;
 	width:97.6%;
 	height:96.5%;
-	background:url('../img/imgList_over.png') no-repeat left top;
+	background:url('../../img/main/imgList_over.png') no-repeat left top;
 	opacity:0;
 	border:4px solid #fff;
 	transition:all 0.45s ease;
@@ -359,7 +359,7 @@
 #body_Content .section2 .main_contents .issue_Btn .btnWhite span{
 	display: inline-block;
 	padding: 0 22px 0 0;
-	background: url(../img/icon_arror01.png) no-repeat right 50%;
+	background: url(../../img/main/icon_arror01.png) no-repeat right 50%;
 }
 
 
@@ -373,12 +373,12 @@
 	width: 100%;
 	position: relative;
 	z-index: 8;
-    background: #222328 url(../img/bg_section04.png) no-repeat center bottom;
+    background: #222328 url(../../img/main/bg_section04.png) no-repeat center bottom;
     background-size: 100%;
 }
 #body_Content .section3 .main_contents{
 
-	background: url(../img/txt_section03.png) no-repeat left 40px;
+	background: url(../../img/main/txt_section03.png) no-repeat left 40px;
 }
 #body_Content .section3 .main_contents .cs_box{
 
@@ -438,7 +438,7 @@
     height: 34px;
     border: 1px solid #fff;
     font-family: 'Arial';
-    background: url(../img/bg_alpha.png) repeat left top;
+    background: url(../../img/main/bg_alpha.png) repeat left top;
     font-size: 12px;
     line-height: 34px;
     text-align: center;
@@ -454,14 +454,14 @@
     width: 34px;
     height: 34px;
     border: 1px solid #fff;
-    background: url(../img/btn_rollPrev.png) no-repeat 50% 50%;
+    background: url(../../img/main/btn_rollPrev.png) no-repeat 50% 50%;
     vertical-align: top;
     font-size: 0px;
     text-indent: -9999px;
 	transition: all 0.5s;
 }
 #body_Content .section3 .main_contents .cs_box .view_control .slide_direction .prev:hover{
-    background: url(../img/btn_rollPrev_over.png) no-repeat 50% 50%;
+    background: url(../../img/main/btn_rollPrev_over.png) no-repeat 50% 50%;
 	background-size: contain;
 }
 #body_Content .section3 .main_contents .cs_box .view_control .slide_direction .next{
@@ -469,7 +469,7 @@
     width: 34px;
     height: 34px;
     border: 1px solid #fff;
-    background: url(../img/btn_rollNext.png) no-repeat 50% 50%;
+    background: url(../../img/main/btn_rollNext.png) no-repeat 50% 50%;
     vertical-align: top;
     font-size: 0px;
     text-indent: -9999px;
@@ -477,7 +477,7 @@
 }
 #body_Content .section3 .main_contents .cs_box .view_control .slide_direction .next:hover{
 
-    background: url(../img/btn_rollNext_over.png) no-repeat 50% 50%;
+    background: url(../../img/main/btn_rollNext_over.png) no-repeat 50% 50%;
 	background-size: contain;
 
 }
@@ -500,8 +500,11 @@
 #body_Content .section3 .main_contents .cs_box .btnWhite span{
 	display: inline-block;
 	padding: 0 22px 0 0;
-	background: url(../img/blt_arrow_03.png) no-repeat right 50%;
+	background: url(../../img/main/blt_arrow_03.png) no-repeat right 50%;
 }
+
+
+
 
 
 
@@ -517,12 +520,12 @@
 	/*height: 833px;*/
 	width: 100%;
 	position: relative;
-    background: #f2bc00 url(../img/bg_section05.png) no-repeat center bottom;
+    background: #f2bc00 url(../../img/main/bg_section05.png) no-repeat center bottom;
     background-size: 100%;
 
 }
 #body_Content .section4 .main_contents{
-	background: url(../img/txt_section04.png) no-repeat right 40px;
+	background: url(../../img/main/txt_section04.png) no-repeat right 40px;
 	padding: 90px 0 180px;
 }
 #body_Content .section4 .main_contents h3{
@@ -551,12 +554,12 @@
     margin-top: 0px;
     margin-bottom: 16px;
     padding: 2px 0 0 35px;
-    background: url(../img/icon_film.png) no-repeat 0 0;
+    background: url(../../img/main/icon_film.png) no-repeat 0 0;
     border-top: 0px;
 }
 #body_Content .section4 .main_contents .recruit .recruit_main h4{
 
-    background: url(../img/icon_film.png) no-repeat 0 0;
+    background: url(../../img/main/icon_film.png) no-repeat 0 0;
 
 }
 #body_Content .section4 .main_contents .recruit .recruit_main .recruit_box{
@@ -618,12 +621,15 @@
 	text-indent: -9999px;
 	width: 20px;
 	height: 20px;
-	background: url(../img/slider_nav02.png) no-repeat 50% 50%;
+	background: url(../../img/main/slider_nav02.png) no-repeat 50% 50%;
 
 }
-#body_Content .section4 .main_contents .recruit .recruit_main .recruit_box .view_control .control_btn li:active{
-	background: url(../img/slider_nav_on02.png) no-repeat 50% 50%;
+#body_Content .section4 .main_contents .recruit .recruit_main .recruit_box .view_control .control_btn li.on{
+
+	background: url(../../img/main/slider_nav_on02.png) no-repeat 50% 50%;
+
 }
+
 
 
 
@@ -638,7 +644,7 @@
 	/*background: green;*/
 }
 #body_Content .section4 .main_contents .recruit .recruit_list h4{
-	background: url(../img/icon_play.png) no-repeat 0 2px;
+	background: url(../../img/main/icon_play.png) no-repeat 0 2px;
 }
 #body_Content .section4 .main_contents .recruit .recruit_list .list{
 	width: 100%;
@@ -648,7 +654,7 @@
 
 }
 #body_Content .section4 .main_contents .recruit .recruit_list .list ul li{
-	background: #e8a800 url(../img/img_recruit.png) no-repeat 0 0;
+	background: #e8a800 url(../../img/main/img_recruit.png) no-repeat 0 0;
 	margin-top: 5px;
 }
 #body_Content .section4 .main_contents .recruit .recruit_list .list ul li:first-child{
@@ -717,7 +723,7 @@
 #body_Content .section4 .main_contents .recruit .btnWhite span{
 	display: inline-block;
 	padding: 0 22px 0 0;
-	background: url(../img/blt_arrow_02.png) no-repeat right 50%;
+	background: url(../../img/main/blt_arrow_02.png) no-repeat right 50%;
 }
 
 
@@ -743,7 +749,7 @@
     padding-bottom: 100px;
 }
 #body_Content .section5 .main_contents{
-	background: url(../img/txt_section05.png) no-repeat left 40px;
+	background: url(../../img/main/txt_section05.png) no-repeat left 40px;
 	padding: 90px 0 80px;
 }
 #body_Content .section5 .main_contents h3{
@@ -803,7 +809,7 @@
 	top:0px;
 	width:100%;
 	height:100%;
-	background:url('../img/imgList_over_1.png') no-repeat left top;
+	background:url('../../img/main/imgList_over_1.png') no-repeat left top;
 	background-size: contain;
 
 	opacity:0;

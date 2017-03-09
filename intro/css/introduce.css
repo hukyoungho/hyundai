@@ -14,7 +14,7 @@
     width: 100%;
 }
 #body_Content .section1 .bg_img{
-    background-image: url(../../img/intro/bg_company_01.jpg);
+    background-image: url(../../img/intro/bg_company_03.jpg);
     text-align: center;
     position: relative;
     height: 440px;
@@ -132,11 +132,7 @@
     font-weight: 700;
     color: #252525;
 }
-#body_Content .section2 .contents .subtit span{
-    font-family: 'Arial';
-    text-transform: uppercase;
-    letter-spacing: 0px;
-}
+
 
 #body_Content .section2 .contents .headtext{
     margin-bottom: 22px;
@@ -149,42 +145,45 @@
     font-weight: 400;
 
 }
+#body_Content .section2 .contents .groupimg{
+    margin-top: 35px;
 
-#body_Content .section2 .contents .ceotext{
-    font-size: 15px;
-    line-height: 24px;
+}
+#body_Content .section2 .contents .btn{
+    margin-top: 20px;
+    text-align: right;
+}
+#body_Content .section2 .contents .btn a{
+    display: inline-block;
+    width: auto;
+    height: 36px;
+    margin-right: 4px;
+    padding: 0 13px;
+    background-color: #3a3a3a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+}
+#body_Content .section2 .contents .btn a span{
+    display: inline-block;
+    padding: 0 27px 0 9px;
+    background: url(../../img/main/icon_arror01.png) no-repeat 97% 50%;
+}
 
+#body_Content .section2 .contents .groupList_01{
+    height: 456px;
+    margin-top: 4px;
+    padding-left: 205px;
+    background: url(../../img/intro/bg_group01.png) no-repeat 0 0;
 }
 
 
-#body_Content .section2 .contents .ceotext p {
-    margin-top: 10px;
-    color: #555;
-}
-
-#body_Content .section2 .contents .ceoImg  {
-
-    overflow: hidden;
-    margin-top: -5px;
-    border-bottom: 1px solid #dbdbdb;
-
-}
-
-#body_Content .section2 .contents .ceoImg  .img{
-    float: right;
-    vertical-align: bottom;
-}
-#body_Content .section2 .contents .ceoImg  .sign span{
-    margin: 20px 20px 0 0;
-    color: #555;
-}
 
 
-#body_Content .section2 .contents .ceoImg  .sign{
-    margin-top: 165px;
-    float: left;
 
-}
+
 
 
 

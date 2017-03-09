@@ -29,7 +29,7 @@ footer .footer_box .utill{
 
 footer .footer_box .utill li{
 	float: left;
-	background: url(../img/blt_bar01.png) no-repeat left center;
+	background: url(../img/common/blt_bar01.png) no-repeat left center;
 	padding:0 7px;
 }
 footer .footer_box .utill li:first-child{
@@ -42,7 +42,7 @@ footer .footer_box address{
 }
 footer .footer_box address .tel{
 	padding-left: 15px;
-	background: url(../img/footer_tel.gif) no-repeat left center;
+	background: url(../img/common/footer_tel.gif) no-repeat left center;
 }
 footer .footer_box .copyright{
 	display: block;
@@ -67,7 +67,7 @@ footer .footer_box .family_site .btn_family{
     margin-right: 7px;
     font-family: 'Arial';
     text-transform: uppercase;
-    background: url(../img/blt_up.png) no-repeat 140px center;
+    background: url(../img/common/blt_up.png) no-repeat 140px center;
 }
 footer .footer_box .family_site .family_list_box {
 	position: absolute;
@@ -103,7 +103,7 @@ footer .footer_box .family_site .submit{
 	height: 34px;
 	display: block;
 	font-size: 0;
-	background: url(../img/btn_go.gif) no-repeat;
+	background: url(../img/common/btn_go.gif) no-repeat;
 }
 footer .footer_box .family_site .sns_icon{
 	overflow: hidden;
