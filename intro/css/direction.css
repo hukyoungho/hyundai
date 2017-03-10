@@ -1,0 +1,525 @@
+#wrap{
+
+    height: 100%;
+
+}
+
+#body_Content{
+    margin: 81px 0 -105px;
+    letter-spacing: -1px;
+
+}
+
+
+#body_Content .section1{
+    width: 100%;
+}
+#body_Content .section1 .bg_img{
+    background-image: url(../../img/intro/bg_company_04.jpg);
+    text-align: center;
+    position: relative;
+    height: 440px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#body_Content .section1 .bg_img .line{
+   position: absolute;
+   bottom: 0px;
+   height: 200px;
+   width: 100%;
+   overflow: hidden;
+   background: url(../../img/intro/bg_diagonal_01.png) no-repeat center bottom;
+   background-size: cover;
+
+}
+
+#body_Content .section1 .bg_img .sub_title_box{
+    padding-top: 105px;
+    width: 1000px;
+    margin: 0 auto;
+}
+#body_Content .section1 .bg_img .sub_title_box h3{
+    text-align: left;
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    word-spacing: -1px;
+    line-height: 40px;
+}
+#body_Content .section1 .bg_img .sub_title_box h3 span{
+    display: block;
+    color: #000;
+    /*text-shadow: 3px 2px 20px #000;*/
+
+}
+#body_Content .section1 .bg_img .sub_title_box h3 span:nth-child(1){
+    font-size: 20px;
+    letter-spacing: -1px;
+
+}
+#body_Content .section1 .bg_img .sub_title_box h3 span:nth-child(2){
+    font-family: arial;
+    letter-spacing: -1px;
+    font-weight: bold;
+
+}
+#body_Content .section1 .bg_img .sub_title_box h3 span:nth-child(3){
+    font-size: 26px;
+    font-family: 'Nanum Myeongjo';
+    margin-top: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+
+
+
+
+/*section2*/
+
+#body_Content .section2{
+    width: 1000px;
+    margin: 0 auto 80px;
+    overflow: hidden;
+
+}
+
+
+
+#body_Content .section2>div{
+    float: left;
+}
+
+#body_Content .section2 #lnb{
+    width: 160px;
+}
+#body_Content .section2 #lnb h2{
+    font-size: 16px;
+    color: #000;
+    border-bottom: 4px solid #000;
+    width: 86px;
+    padding-bottom: 16px;
+    letter-spacing: -1px;
+}
+#body_Content .section2 #lnb ul{
+    margin-top: 16px;
+
+}
+#body_Content .section2 #lnb ul li a{
+    display: inline-block;
+    color: #000;
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 13px;
+}
+#body_Content .section2 #lnb ul li a.on{
+    color: #25a449;
+}
+#body_Content .section2 #lnb ul li a.on:hover{
+    text-decoration: underline;
+}
+
+
+#body_Content .section2 .contents{
+    float: right;
+    width: 830px;
+    overflow: hidden;
+}
+
+#body_Content .section2 .contents .subtit{
+    height: 70px;
+    font-size: 24px;
+    color: #252525;
+}
+#body_Content .section2 .contents .subtit span{
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+#body_Content .section2 .contents .mapArea {
+    overflow: hidden;
+}
+#body_Content .section2 .contents .mapArea div:first-child{
+    float: left;
+}
+#body_Content .section2 .contents .mapArea div:last-child{
+    float: right;
+}
+
+#body_Content .section2 .contents .mapArea .mapImg{
+    border: 1px solid #cbcbcb;
+
+}
+
+
+#body_Content .section2 .contents .mapArea .mapImg img{
+    vertical-align: bottom;
+
+}
+
+
+#body_Content .section2 .contents .mapArea .mapTable{
+    width: 324px;
+    font-size: 13px;
+}
+
+
+#body_Content .section2 .contents .mapArea .mapTable table{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    border-top: 1px solid #cbcbcb;
+    border-collapse: collapse;
+
+
+}
+#body_Content .section2 .contents .mapArea .mapTable table tr{
+    line-height: 24px;
+}
+#body_Content .section2 .contents .mapArea .mapTable table tr th{
+    padding: 10px 0 12px 0;
+    color: #898989;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #cbcbcb
+}
+#body_Content .section2 .contents .mapArea .mapTable table tr:last-child th{
+    vertical-align: top;
+}
+#body_Content .section2 .contents .mapArea .mapTable table tr td{
+    padding: 10px 0 12px 10px;
+    border-bottom: 1px solid #cbcbcb;
+    font-weight: 700;
+
+}
+
+#body_Content .section2 .contents .mapArea .mapTable table tr td.list dl:last-child{
+    overflow: hidden;
+    margin-top: 8px;
+
+}
+#body_Content .section2 .contents .mapArea .mapTable table tr td.list dl{
+    float: left;
+
+}
+#body_Content .section2 .contents .mapArea .mapTable table tr td.list dl dt{
+    width: 47px;
+
+}
+#body_Content .section2 .contents .mapArea .mapTable table tr td.list dl dd .bar{
+    height: 12px;
+    margin-right: 10px;
+    line-height: 12px;
+    border-right: 1px solid #b9b9ba;
+    vertical-align: middle;
+}
+
+#body_Content .section2 .contents .mapArea .mapTable table tr td.list dl dd .txt{
+    display: block;
+    padding-left: 10px;
+}
+#body_Content .section2 .contents .mapArea .mapTable table tr td.list dl dd .indent{
+    margin-left: 53px;
+}
+
+#body_Content .section2 .contents .mapArea .mapTable table tr td.list dl dt, dd{
+    float: left;
+
+}
+
+
+#body_Content .section2 .contents .printBtn {
+    float: right;
+    margin: 32px 0;
+}
+
+#body_Content .section2 .contents .printBtn a{
+    display: inline-block;
+    width: auto;
+    height: 36px;
+    margin-right: 4px;
+    padding: 0 13px;
+    background-color: #313131;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+#body_Content .section2 .contents .printBtn a span{
+    padding: 0 15px 0 31px;
+    background: url(../../img/intro/btn_map.png) no-repeat 10px 50%;
+}
+
+#body_Content .section2 .contents .contactuslist{
+
+    height: auto;
+}
+#body_Content .section2 .contents .contactuslist dl{
+    overflow: hidden;
+}
+
+
+#body_Content .section2 .contents .contactuslist dl dt{
+    margin-top: 37px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+#body_Content .section2 .contents .contactuslist dl dd{
+    margin-bottom: 11px;
+    font-size: 15px;
+    padding-left: 50px;
+    line-height: 1.5em;
+}
+#body_Content .section2 .contents .contactuslist dl dd span{
+    margin-left: -50px;
+    width: 50px;
+    display: inline-block;
+}
+
+#body_Content .section2 .contents .contactuslist .iconMap{
+    padding-left: 14px;
+    background: url(../../img/intro/icon_map_on.png) no-repeat 0 2px;
+    font-size: 13px;
+    color: #252525;
+    font-weight: 600;
+}
+
+#body_Content .section2 .contents .contactuslist dl:nth-child(2) dd,
+ #body_Content .section2 .contents .contactuslist dl:nth-child(3) dd{
+
+    padding-left: 70px;
+}
+#body_Content .section2 .contents .contactuslist dl:nth-child(2) dd span,
+#body_Content .section2 .contents .contactuslist dl:nth-child(3) dd span{
+    margin-left: -70px;
+    width: 70px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*seciont3*/
+
+
+
+#body_Content .section3{
+    width: 830px;
+    margin: 80px auto 105px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    background: url(../../img/intro/blt_bar03.gif) no-repeat 0 0;
+    position: relative;
+    left: 71px;
+}
+
+#body_Content .section3 .subtit{
+    height: 70px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+}
+#body_Content .section3 .contents_box .headtext {
+    font-size: 36px;
+    font-family: 'Arial';
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 40px;
+}
+#body_Content .section3 .contents_box .glob_domes_tab {
+    position: relative;
+}
+#body_Content .section3 .contents_box .glob_domes_tab .tabTit {
+    display: inline-block;
+    margin-right: -4px
+}
+
+#body_Content .section3 .contents_box .glob_domes_tab .tabTit a{
+    width: 129px;
+    height: 34px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 13px;
+    line-height: 34px;
+    color: #fff;
+    padding: 0 10px;
+    display: inline-block;
+    background-color: #004a80;
+
+
+}
+
+#body_Content .section3 .contents_box .glob_domes_tab div.domesticList{
+    border-top: 1px solid #000;
+    display: none;
+
+}
+
+#body_Content .section3 .contents_box .glob_domes_tab .domesticList table{
+    border-collapse: collapse;
+    border: 0px;
+    color: #555;
+    width: 100%;
+    text-align: center;
+
+}
+#body_Content .section3 .contents_box .glob_domes_tab .domesticList table caption{
+    font-size: 0;
+    text-indent: -9999px;
+
+}
+
+#body_Content .section3 .contents_box .glob_domes_tab .domesticList table tr{
+    font-size: 15px;
+    color: #555;
+    border-bottom: 1px solid #cbcbcb
+}
+#body_Content .section3 .contents_box .glob_domes_tab .domesticList table tr th{
+    padding: 23px 0 16px;
+
+    font-weight: 400;
+}
+#body_Content .section3 .contents_box .glob_domes_tab .domesticList table tr td:nth-child(2){
+    text-align: left;
+}
+#body_Content .section3 .contents_box .glob_domes_tab .domesticList table tr td:nth-child(3){
+    font-family: 'Arial';
+}
+
+#body_Content .section3 .contents_box .glob_domes_tab .domesticList table tr td:nth-child(4) a{
+    padding-left: 14px;
+    background: url(../../img/intro/icon_map_off.png) no-repeat 0 1px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+#body_Content .section3 .contents_box .glob_domes_tab .globalList{
+    border-top: 1px solid #000;
+}
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .glob_lnb{
+    text-align: right;
+}
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .glob_lnb li{
+
+    display: inline-block;
+    margin: 20px 0 18px;
+    padding: 0 19px;
+    background: url(../../img/intro/bar05.gif) no-repeat 0 2px;
+}
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .glob_lnb li:first-child{
+
+    background: none;
+}
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .glob_lnb li a{
+    color: #898989;
+}
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .glob_lnb li.on a{
+    color: #004a80;
+}
+
+
+
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list{
+    border-top: 1px solid #c4c4c4;
+    overflow: hidden;
+    margin: 0 -1px 0 0;
+}
+
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list li{
+    position: relative;
+    float: left;
+    width: 240px;
+    margin: -1px 0 0 -1px;
+    height: 140px;
+    padding: 29px 18px 18px 18px;
+    border: 1px solid #c4c4c4;
+
+}
+
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list li span{
+    font-size: 15px;
+    color: #252525;
+    line-height: 18px;
+    font-weight: 700;
+
+}
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list li p{
+    margin-top: 9px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Arial';
+    text-transform: uppercase;
+    letter-spacing: 0px;
+
+}
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list li .iconMap{
+    padding-left: 14px;
+    background: url(../../img/intro/icon_map_off.png) no-repeat 0 1px;
+    font-size: 13px;
+    color: #555;
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*navbar*/
+#body_Content .navbar li{
+    text-align: center;
+    font-size: 0px;
+    font-weight: 600;
+}
+
+#body_Content .navbar li.on a{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    height: auto;
+    color: #000;
+}
+
+#body_Content .navbar li.on a em{
+    display: inline-block;
+    width: 13px;
+    line-height: 13px;
+
+}
