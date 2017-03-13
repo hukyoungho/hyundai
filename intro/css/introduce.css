@@ -114,11 +114,9 @@
     font-size: 13px;
 }
 #body_Content .section2 #lnb ul li a.on{
-    color: #25a449;
+    color: #25a449!important;
 }
-#body_Content .section2 #lnb ul li a.on:hover{
-    text-decoration: underline;
-}
+
 
 
 #body_Content .section2 .contents{

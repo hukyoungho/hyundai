@@ -115,11 +115,9 @@
     font-size: 13px;
 }
 #body_Content .section2 #lnb ul li a.on{
-    color: #25a449;
+    color: #25a449!important;
 }
-#body_Content .section2 #lnb ul li a.on:hover{
-    text-decoration: underline;
-}
+
 
 
 #body_Content .section2 .contents{
@@ -364,20 +362,32 @@
     text-align: center;
     font-size: 13px;
     line-height: 34px;
-    color: #fff;
+    color: #000;
     padding: 0 10px;
     display: inline-block;
+    background-color: #fff;
+
+
+}
+#body_Content .section3 .contents_box .glob_domes_tab .tabTit a.on{
+
     background-color: #004a80;
+    color: #fff;
 
 
 }
 
-#body_Content .section3 .contents_box .glob_domes_tab div.domesticList{
+
+#body_Content .section3 .contents_box .glob_domes_tab div.globalList{
     border-top: 1px solid #000;
     display: none;
 
 }
 
+#body_Content .section3 .contents_box .glob_domes_tab .domesticList{
+    border-top: 1px solid #000;
+
+}
 #body_Content .section3 .contents_box .glob_domes_tab .domesticList table{
     border-collapse: collapse;
     border: 0px;
@@ -396,6 +406,9 @@
     font-size: 15px;
     color: #555;
     border-bottom: 1px solid #cbcbcb
+}
+#body_Content .section3 .contents_box .glob_domes_tab .domesticList table tr:hover{
+    color: #000;
 }
 #body_Content .section3 .contents_box .glob_domes_tab .domesticList table tr th{
     padding: 23px 0 16px;
@@ -419,6 +432,7 @@
 
 #body_Content .section3 .contents_box .glob_domes_tab .globalList{
     border-top: 1px solid #000;
+    display: none
 }
 #body_Content .section3 .contents_box .glob_domes_tab .globalList .glob_lnb{
     text-align: right;
@@ -438,18 +452,18 @@
     color: #898989;
 }
 #body_Content .section3 .contents_box .glob_domes_tab .globalList .glob_lnb li.on a{
-    color: #004a80;
+    color: #004a80!important;
 }
 
 
 
-#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list{
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .list{
     border-top: 1px solid #c4c4c4;
     overflow: hidden;
     margin: 0 -1px 0 0;
 }
 
-#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list li{
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .list li{
     position: relative;
     float: left;
     width: 240px;
@@ -459,15 +473,19 @@
     border: 1px solid #c4c4c4;
 
 }
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .list li:hover{
+    background-color: #eee;
 
-#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list li span{
+}
+
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .list li span{
     font-size: 15px;
     color: #252525;
     line-height: 18px;
     font-weight: 700;
 
 }
-#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list li p{
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .list li p{
     margin-top: 9px;
     font-size: 12px;
     line-height: 16px;
@@ -476,7 +494,7 @@
     letter-spacing: 0px;
 
 }
-#body_Content .section3 .contents_box .glob_domes_tab .globalList .global_list li .iconMap{
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .list li a{
     padding-left: 14px;
     background: url(../../img/intro/icon_map_off.png) no-repeat 0 1px;
     font-size: 13px;
@@ -487,6 +505,11 @@
 
 
 }
+#body_Content .section3 .contents_box .glob_domes_tab .globalList .list li a:hover{
+    background-image: url(../../img/intro/icon_map_on.png);
+    color: #252525;
+}
+
 
 
 
