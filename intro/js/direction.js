@@ -93,9 +93,11 @@ $(document).ready(function() {
     $(window).scroll(function(){
         var st = $(window).scrollTop();
         console.log(st);
+
         for(var i=0; i<2; i++){
 
-            if(st >= $('#body_Content section').eq(i+1).offset().top-100){
+            if(st >= $('#body_Content section').eq(i+1).offset().top-400){
+
                 $('.navbar li').eq(i).addClass('on').siblings().removeClass();
 
             }

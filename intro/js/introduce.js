@@ -1,4 +1,4 @@
-.//common
+//common
 // section2
 $(function(){
 

@@ -119,7 +119,11 @@ $(document).ready(function() {
 $(document).ready(function() {
         $('footer .btn_family').click(function() {
             $('footer .family_site .btn_family').css({
+
+                background:'url(../img/common/blt_down.png) no-repeat 140px center',
+
                 background:'url(../img/common/blt_down.png) no-repeat 140px center'
+
             })
             $('footer .family_site .family_list_box .family_list').stop().animate({
                 top:'0px'
