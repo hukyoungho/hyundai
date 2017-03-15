@@ -31,7 +31,7 @@ $(function(){
 
 
 
-$(function(){
+$(window).load(function(){
 
     $('.section2 .contents .navYear > ul > li > a').click(function(){
         var idx = $(this).parent().index();
@@ -45,13 +45,11 @@ $(function(){
 
 
 
-        // var moved = $('.section2 .contents > section').eq(1).offset().top;
-        //
-        // console.log(moved);
-
-        // $('body,html').animate({
-        //      scrollTop:moved
-        // })
+        var moved = $('.section2 .contents > section').eq(idx).offset().top;
+        console.log(moved);
+        $('body,html').animate({
+             scrollTop:moved
+        })
 
     })
     $('.section2 .contents .navYear > ul > li').mouseenter(function(){
@@ -71,21 +69,21 @@ $(function(){
         //   console.log('d');
       });
 
-    // $('.section2 .contents .navYear .subYear li a').click(function(){
-    //     var idx_1 = $(this).parent().index();
-    //     console.log(idx_1);
-    //     // $(this).parent().addClass('on').siblings().removeClass();
-    //     var move = $('.section2 .contents > section').find('div').eq(idx_1).offset().top;
-    //     console.log(move);
-    //     $('body,html').animate({
-    //          scrollTop:move
-    //     })
-    //
-    //
-    //
-    //
-    //
-    // });
+    $('.section2 .contents .navYear .subYear li').click(function(){
+        var idx = $(this).index();
+        console.log(idx);
+        // $(this).parent().addClass('on').siblings().removeClass();
+        var move = $('.section2 .contents > section').children('div').eq(idx).offset().top;
+        console.log(move);
+        $('body,html').animate({
+             scrollTop:move
+        })
+
+
+
+
+
+    });
 
 
 
