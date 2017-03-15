@@ -116,6 +116,7 @@ header .util li{
     font-size: 0px;
     text-indent: -9999px;
     margin-right: 9px;
+    position: relative;
 }
 
 header .util li a.search{
@@ -133,6 +134,45 @@ header .util li a.search:hover{
     background: url(../img/common/icon_utillTop_01_on.png) no-repeat right top;
 
 }
+
+header .util li .searchBox{
+    width: 311px;
+    padding: 15px 14px;
+    position: absolute;
+    top: 46px;
+    left: -264px;
+    background: #fff;
+    border: 1px solid #828384;
+    display: none;
+}
+header .util li .searchBox input[type="text"]{
+    width: 217px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 0 0 10px;
+    background: #edf0ee;
+    border: 1px solid #828384;
+    border-right: 0px;
+    color: #87898b;
+}
+header .util li .searchBox input[type="button"]{
+    width: 83px;
+    height: 30px;
+    background: url(../img/common/btn_search.png) no-repeat left top;
+    border: 0px;
+    font-size: 0px;
+}
+header .util li .searchBox .point{
+    right: 57px;
+    position: absolute;
+    top: -11px;
+    display: inline-block;
+    width: 13px;
+    height: 11px;
+    background: url(../img/common/blt_pointer.png) no-repeat left top;
+}
+
+
 header .util li a.lang{
 
     font-size: 0px;
