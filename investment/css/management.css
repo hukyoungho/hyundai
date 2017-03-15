@@ -1,8 +1,4 @@
-#wrap{
 
-    height: 100%;
-
-}
 
 #body_Content{
     margin: 81px 0 -105px;
@@ -16,7 +12,7 @@
     width: 100%;
 }
 #body_Content .section1 .bg_img{
-    background-image: url(../../img/business/bg_business_04.jpg);
+    background-image: url(../../img/business/bg_business_03.jpg);
     text-align: center;
     position: relative;
     height: 440px;
@@ -176,7 +172,7 @@
 #body_Content .section2 .contents .infraBox ul li{
     float: left;
     display: table;
-    margin-left: 5px;
+    margin-left: 10px;
 
 }
 #body_Content .section2 .contents .infraBox ul li:first-child{
@@ -185,7 +181,7 @@
 }
 #body_Content .section2 .contents .infraBox ul li span{
     display: table-cell;
-    width: 158px;
+    width: 128px;
     height: 48px;
     border: 1px solid #bfbfbf;
     text-align: center;
@@ -237,18 +233,13 @@
 
     opacity: 1;
 }
-#body_Content .section3 .resultList ul li a  span.imgArea{
-    width: 554px;
-    height: 230px;
+#body_Content .section3 .resultList ul li:hover a  span.imgArea{
     overflow: hidden;
 }
-
 #body_Content .section3 .resultList ul li:hover a  span.imgArea img{
     transform: scale(1.05,1.05);
 }
 #body_Content .section3 .resultList ul li a span.imgArea img{
-    width: 100%;
-    height: 100%;
     transition: all 0.5s;
 }
 
@@ -328,7 +319,7 @@
     cursor: pointer;
     position: absolute;
     z-index: 10;
-    margin-top: 684px;
+    margin-top: 50%;
     left: 50%;
     margin-left: 520px;
     width: 24px;

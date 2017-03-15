@@ -196,6 +196,9 @@ var navEvent = {
         $('.depth_gnb .depth_gnb_box ul').on({
             mouseenter:over
         })
+        $('header .gnb li').on({
+            mouseenter:over
+        })
     }
 }
 
