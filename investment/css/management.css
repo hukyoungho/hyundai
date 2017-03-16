@@ -75,7 +75,7 @@
 
 #body_Content .section2{
     width: 1000px;
-    margin: 0 auto 105px;
+    margin: 0 auto;
     overflow: hidden;
 
 }
@@ -125,68 +125,178 @@
     color: #252525;
 }
 #body_Content .section2 .contents .conInfo{
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 #body_Content .section2 .contents .conInfo > div{
     float: left;
     border: 1px solid #c4c4c4;
     box-sizing: border-box;
+
 }
-#body_Content .section2 .contents .conInfo > div.info{
+#body_Content .section2 .contents .conInfo > div:nth-child(1){
     width: 225px;
-    background-color: #fff;
-    border-top: 1px solid #c4c4c4;
+    height: 137px;
+    border-right: 0px;
+    font-size: 14px;
 }
-#body_Content .section2 .contents .conInfo > div.info span,
-#body_Content .section2 .contents .conInfo > div.info strong{
+#body_Content .section2 .contents .conInfo > div:nth-child(1) span{
     display: block;
-    width: 173px;
     height: 40px;
     padding: 28px 29px 0 23px;
-    background-color: #fff;
+}
+#body_Content .section2 .contents .conInfo > div:nth-child(1) span strong{
+    float: right;
+    font-size: 18px;
+    font-weight: 400;
+    color: #252525;
+    margin-top: -3px;
+}
+#body_Content .section2 .contents .conInfo > div:nth-child(1) span:nth-child(2){
+    padding: 28px 29px 0 23px;
     border-top: 1px solid #c4c4c4;
-}
-#body_Content .section2 .contents .conInfo > div.info span{
-    border: 0;
-}
 
-#body_Content .section2 .contents .conInfo > div.capital{
-    width: 281px;
+}
+#body_Content .section2 .contents .conInfo > div:nth-child(2){
+    width: 287px;
     height: 137px;
-    padding: 20px 23px 0;
-    border-left: 1px solid #c4c4c4;
+    padding: 20px 29px 0 23px;
+    background-color: #fff;
+    border-right: 0px;
     background-color: #f1f1f1;
+
 }
-#body_Content .section2 .contents .conInfo > div.capital strong{
-    margin-top: 10px;
-    display: block;
-    font-size: 60px;
-}
-#body_Content .section2 .contents .conInfo > div.capital span:first-child{
+#body_Content .section2 .contents .conInfo > div:nth-child(2) span:nth-child(1){
     font-size: 18px;
     color: #252525;
 }
-#body_Content .section2 .contents .conInfo > div.capital span:first-child + span{
-    margin-left: 5px;
-    font-size: 14px;
-    color: #555;
+#body_Content .section2 .contents .conInfo > div:nth-child(2) span:nth-child(2){
+
 }
 
-#body_Content .section2 .contents .conInfo > div.grade{
-    width: 316px;
-    height: 137px;
-    padding: 20px 23px 0;
-    border-left: 1px solid #c4c4c4;
-    background-color: #f1f1f1;
-}
-#body_Content .section2 .contents .conInfo > div.grade span:first-child{
-    font-size: 18px;
-    color: #252525;
-}
-#body_Content .section2 .contents .conInfo > div.grade strong{
+
+
+#body_Content .section2 .contents .conInfo > div:nth-child(2) strong{
     display: block;
     font-size: 60px;
+    margin-top: 11px;
+}
+#body_Content .section2 .contents .conInfo > div:nth-child(3) strong{
+    display: block;
+    font-size: 60px;
+    margin-top: 11px;
     text-align: right;
 }
+
+
+
+
+#body_Content .section2 .contents .conInfo > div:nth-child(3){
+    width: 316px;
+    height: 137px;
+    padding: 20px 29px 0 23px;
+    background-color: #f1f1f1;
+}
+
+#body_Content .section2 .contents .conInfo > div:nth-child(3) span{
+    font-size: 18px;
+    color: #252525;
+}
+
+#body_Content .section2 .contents .infoTable table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #555;
+    width: 100%;
+    border-top: 1px solid #aaa !important;
+}
+
+#body_Content .section2 .contents .infoTable table tr th{
+    padding: 13px 0 9px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #aaa;
+    font-weight: 400;
+    color: #252525;
+}
+#body_Content .section2 .contents .infoTable table tr td{
+    padding: 13px 0 9px;
+    border-bottom: 1px solid #aaa;
+    color: #252525;
+    padding-left: 33px ;
+}
+#body_Content .section2 .contents .downBtn{
+    text-align: right;
+}
+#body_Content .section2 .contents .downBtn a{
+    float: right;
+    display: inline-block;
+    width: 145px;
+    height: 36px;
+    padding: 0 13px;
+    background-color: #313131;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#body_Content .section2 .contents .downBtn a em{
+    padding: 0 8px 0 30px;
+    background: url(../../img/investment/btn_download08.png) no-repeat 5px 46%;
+
+}
+
+
+#body_Content .section2 .contents .listArea{
+    margin-top: 49px;
+    position: relative;
+    height: 300px;
+}
+
+#body_Content .section2 .contents .listArea h5{
+    font-size: 18px;
+    line-height: 18px;
+    color: #252525;
+    margin-bottom: 30px;
+
+}
+
+#body_Content .section2 .contents .listArea ul li{
+    width: 135px;
+    border-top: 1px solid #c4c4c4;
+
+}
+#body_Content .section2 .contents .listArea ul li:first-child{
+    border-top: none;
+
+}
+#body_Content .section2 .contents .listArea ul li a{
+    display: inline-block;
+    padding: 7px 8px;
+    font-size: 13px;
+    color: #252525;
+
+}
+#body_Content .section2 .contents .listArea ul li .txt{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 635px;
+    height: 204px;
+    background-color: #f1f1f1;
+    border: 1px solid #c4c4c4;
+    padding: 20px;
+    overflow-y: auto;
+
+
+}
+
+
+
+
 
 
 

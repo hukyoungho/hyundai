@@ -52,3 +52,8 @@ input{
 em, address{
 	font-style: normal;
 }
+caption{
+	overflow: hidden;
+	font-size: 0px;
+	line-height: 0px;
+}
