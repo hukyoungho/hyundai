@@ -4,21 +4,16 @@
 
 
 // section1
+
+// slidebanner 함수
 var idx = 0;
-function movement(start, end){
-    $('.slidebanner').css({
+function movement(start, end ,i){
+    $('.section1 .slidebanner li').eq(i).css({
         'left':start
     }).stop().animate({
         'left':end
     },1000);
-    //
-    // if(idx == $('.slidebanner li').length){
-    //     idx = 0
-    //     movement('100%',0)
-    // }else if(idx<0){
-    //     idx= $('.slidebanner li').length -1
-    //     movement('-100%',0)
-    // }
+
 }
 
 
@@ -26,46 +21,47 @@ $(function(){
 
     $('.slide_control .next').click(function(){
         if(idx==0){
-            $('.slidebanner li').css({
-                left:'0%'
-            })
-            movement(0,'-100%');
+
+            movement(0,'-20%',idx);
             idx++
+            movement(0,'-20%',idx);
+
+
             console.log(idx);
         }else if (idx == 1) {
-            $('.slidebanner li').css({
-                left:'0%'
-            })
-            movement('-100%','-200%');
+            movement('-20%','-40%',idx);
             idx++
+            movement('-20%','-40%',idx);
+
+
             console.log(idx);
         }else if (idx == 2) {
-            $('.slidebanner li').css({
-                left:'0%'
-            })
-            movement('-200%','-300%');
+            movement('-40%','-60%',idx);
             idx++
+            movement('-40%','-60%',idx);
+
+
             console.log(idx);
         }else if (idx == 3) {
-            $('.slidebanner li').css({
-                left:'0%'
-            })
-            movement('-300%','-400%');
+            movement('-60%','-80%',idx);
             idx++
+            movement('-60%','-80%',idx);
+
+
             console.log(idx);
         }else if (idx == 4) {
             $('.slidebanner li:nth-child(5)').css({
-                left:'0%'
+                left:'-80%'
 
             }).stop().animate({
-                'left':'-20%'
+                'left':'-100%'
             },1000);
 
             $('.slidebanner li:nth-child(1)').css({
-                left:'100%'
+                left:'20%'
 
             }).stop().animate({
-                'left':'80%'
+                'left':0
             },1000);
 
             idx=0;
@@ -75,155 +71,104 @@ $(function(){
         }
     })
     $('.slide_control .prev').click(function(){
+        console.log(111);
         if(idx==0){
-            $('.slidebanner li:nth-child(5)').css({
-                left:'-100%'
 
-            }).stop().animate({
-                'left':'-80%'
-            },1000);
+            movement(0,'20%',idx);
+            idx=4;
+            movement('-100%','-80%',idx);
 
-            $('.slidebanner li:nth-child(1)').css({
-                left:'0%'
-
-            }).stop().animate({
-                'left':'20%'
-            },1000);
-
-            $('.slidebanner li:nth-child(4)').css({
-                left:'-80%'
-
-            })
-            $('.slidebanner li:nth-child(3)').css({
-                left:'-80%'
-
-            })
-            $('.slidebanner li:nth-child(2)').css({
-                left:'-80%'
-
-            })
-
-
-            idx=0;
             console.log(idx);
+        }
+        else if (idx == 4) {
+            movement('-80%','-60%',idx);
+            idx--
+            movement('-80%','-60%',idx);
 
-        }else if (idx == 1) {
-            movement('-100%','0%');
-            idx++
-            console.log(idx);
-        }else if (idx == 2) {
-            movement('-200%','300%');
-            idx++
+
             console.log(idx);
         }else if (idx == 3) {
-            movement('-300%','-400%');
-            idx++
+            movement('-60%','-40%',idx);
+            idx--
+            movement('-60%','-40%',idx);
+
+
             console.log(idx);
-        }else if (idx == 4) {
-            $('.slidebanner li:nth-child(5)').css({
-                left:'0%'
+        }else if (idx == 2) {
+            movement('-40%','-20%',idx);
+            idx--
+            movement('-40%','-20%',idx);
+
+
+            console.log(idx);
+        }else if (idx == 1) {
+            $('.slidebanner li:nth-child(1)').css({
+                left:'-20%'
 
             }).stop().animate({
-                'left':'-20%'
+                'left':'0%'
             },1000);
 
-            $('.slidebanner li:nth-child(1)').css({
-                left:'100%'
+            $('.slidebanner li:nth-child(2)').css({
+                left:'-20%'
 
             }).stop().animate({
-                'left':'80%'
+                left:'-0%'
             },1000);
 
             idx=0;
             console.log(idx);
-
-
         }
 
     })
+
+    var inter = setInterval(function(){
+        $('.slide_control .next').click();
+    },4500);
+    $('.slide_control #stop').click(function(){
+        clearInterval(inter)
+        $(this).addClass('on').siblings().removeClass();
+    })
+    $('.slide_control #start').click(function(){
+        inter = setInterval(function(){
+            $('.slide_control .next').click();
+        },4500);
+        $(this).addClass('on').siblings().removeClass();
+    })
+
+
+    $('.section1 #prev').click(function(e){
+    e.preventDefault();
+    var stat = $('.section1 #slide_num #num').text();
+    var num = parseInt(stat,10);
+    num--;
+    if(num<=0){
+    num =5;
+    }
+    $('.section1 #slide_num #num').text(num);
+    });
+    $('.section1 #next').click(function(e){
+    e.preventDefault();
+    var stat = $('.section1 #slide_num #num').text();
+    var num = parseInt(stat,10);
+    num++;
+
+    if(num>5){
+    num=1;
+    }
+    $('.section1 #slide_num #num').text(num);
+    });
+
+
 });
 
 
 
 
-
-
-// var idx = 0;
-// function movement(start, end){
-//     $('.slidebanner').css({
-//         'left':start,
-//         'display':'block'
-//     }).stop().animate({
-//         'left':end
-//     },1000);
-//     //
-    // if(idx == $('.slidebanner li').length){
-    //     idx = 0
-    //     movement('100%',0)
-    // }else if(idx<0){
-    //     idx= $('.slidebanner li').length -1
-    //     movement('-100%',0)
-    // }
-// }
-
-
-$(function(){
-  $('.section1 #prev').click(function(e){
-  e.preventDefault();
-  var stat = $('.section1 #slide_num #num').text();
-  var num = parseInt(stat,10);
-  num--;
-  if(num<=0){
-  num =5;
-  }
-  $('.section1 #slide_num #num').text(num);
-  });
-  $('.section1 #next').click(function(e){
-  e.preventDefault();
-  var stat = $('.section1 #slide_num #num').text();
-  var num = parseInt(stat,10);
-  num++;
-
-  if(num>5){
-  num=1;
-  }
-  $('.section1 #slide_num #num').text(num);
-  });
-});
-
-//
-// $(function(){
-//
-//     $('.slide_control .next').click(function(){
-//         movement(0,'-100%');
-//
-//
-//
-//     })
-//     $('.slide_control .prev').click(function(){
-//         movement(0,'20%',idx)
-//         idx--
-//         movement('-20%',0,idx)
-//     })
-
-
-    // var inter = setInterval(function(){
-    //     $('.slide_control .next').click();
-    // },4500);
-    // $('.slide_control .stop').click(function(){
-    //     clearInterval(inter)
-    // })
-    // $('.slide_control .start').click(function(){
-    //     inter = setInterval(function(){
-    //         $('.slide_control .next').click();
-    //     },4500);
-    // })
-
-
-// })
 
 //section3
 
+//slidebanner 함수
 var idx_1 = 0;
 function movement_1(start, end ,i){
     $('.section3 .slider li').eq(i).css({
@@ -308,32 +253,29 @@ function movement_2(i){
 
 
 //navbar
-$(function(){
-  $('.navbar li').click(function(){
-      idx=$(this).index();
-      $(this).find('img').css({
-          'display':'block',
-
-      }).parent().parent().siblings().find('img').css({
-          'display':'none',
-
-      });
-      $(this).find('a').css({
-          'border-bottom': '2px solid #000',
-          'padding-bottom': '3px',
-          'height':'auto'
-      }).parent().siblings().find('a').css({
-          'border-bottom': '2px solid #000',
-          'padding-bottom': 'none',
-          'height':'10px'
-      });
-
-  });
-
-});
 
 
 $(document).ready(function() {
+    $('.navbar li').click(function(){
+        idx=$(this).index();
+        $(this).find('img').css({
+            'display':'block',
+
+        }).parent().parent().siblings().find('img').css({
+            'display':'none',
+
+        });
+        $(this).find('a').css({
+            'border-bottom': '2px solid #000',
+            'padding-bottom': '3px',
+            'height':'auto'
+        }).parent().siblings().find('a').css({
+            'border-bottom': '2px solid #000',
+            'padding-bottom': 'none',
+            'height':'10px'
+        });
+
+    });
 
     $('.navbar a').click(function(){
       var idx = $(this).parent().index();
@@ -344,12 +286,9 @@ $(document).ready(function() {
   });
     $(window).scroll(function(){
         var st = $(window).scrollTop();
-        // console.log(st);
         console.log()
         for(var i=0; i<5; i++){
-            //  console.log($('#body_Content section:eq('+i+')').offset().top);
             if(st >= $('#body_Content section:eq('+i+')').offset().top-200){
-                // console.log(1);
                 $('.navbar li').eq(i).find('img').css({
                     'display':'block'
 

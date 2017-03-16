@@ -490,3 +490,51 @@
     line-height: 13px;
 
 }
+/*navbar*/
+
+
+#body_Content .navbar{
+	position: fixed;
+    top: 50%;
+    right: 30px;
+    width: 23px;
+    z-index: 100;
+}
+
+#body_Content .navbar li{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    font-size: 0px;
+}
+#body_Content .navbar li:first-child,
+#body_Content .navbar li:first-child+li
+{
+    border-bottom: none;
+}
+
+#body_Content .navbar li a {
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    font-weight: 600;
+}
+
+#body_Content .navbar li.on a{
+    height: auto;
+    border: 0px;
+}
+
+#body_Content .navbar li a em{
+    display: block;
+}
+#body_Content .navbar li.on a em{
+    margin: 10px auto 7px;
+    font-size: 12px;
+    line-height: 13px;
+    color: #000;
+    width: 13px;
+}
+
+#body_Content .navbar li:hover {
+    background: #000;
+}

@@ -286,6 +286,7 @@
 #body_Content .section3 .resultList ul li:nth-child(2n) a > span.imgArea{
 
     float: left;
+    overflow: hidden;
 
 
 
@@ -300,6 +301,7 @@
 #body_Content .section3 .resultList ul li:nth-child(2n+1) a > span.imgArea{
 
     float: right;
+    overflow: hidden;
 
 }
 

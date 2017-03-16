@@ -7,15 +7,6 @@ var navEvent = {
             console.log(idx);
             $('.depth_gnb .subTxt_box ul li').eq(idx).addClass('on').siblings().removeClass();
             $('.depth_gnb .depth_gnb_box ul').eq(idx).find('a').css('color','#aaa').parent().parent().siblings().find('a').css('color','#707070');
-            $('header .gnb li').eq(idx).find('a').css({
-                color: '#25a449',
-                'border-bottom': '4px solid #25a449',
-                'box-sizing': 'border-box'
-            }).parent().siblings().find('a').css({
-                color: '#000',
-                'border-bottom': 'none',
-                'box-sizing': 'none'
-            })
         }
 
         $('.depth_gnb .depth_gnb_box ul').on({
@@ -29,25 +20,27 @@ var navEvent = {
 
 
 $(document).ready(function() {
-            navEvent.mouse();
-        $('header').click(function() {
-            var st = $(window).scrollTop();
+        navEvent.mouse();
+    $('#wgnb .gnb li a').click(function() {
+        var st = $(window).scrollTop();
 
-            if(st >= 600 && $('header #wgnb').is('.fix')){
-                $(this).find('.depth_gnb').css({
-                    top: '45px'
-                })
-                $(this).find('.depth_gnb').slideToggle(1000);
-                console.log('1');
-            }
-            else if(st <= 599 && !$('header #wgnb').is('.fix')){
-                $(this).find('.depth_gnb').css({
-                    top: '80px'
-                })
-                $(this).find('.depth_gnb').slideToggle(1000);
-            }
-        })
+        if(st >= 600 && $('header #wgnb').is('.fix')){
+            $('header').find('.depth_gnb').css({
+                top: '45px'
+            })
+            $('header').find('.depth_gnb').slideToggle(1000);
+        }
+        else if(st <= 599 && !$('header #wgnb').is('.fix')){
+            $('header').find('.depth_gnb').css({
+                top: '80px'
+            })
+            $('header').find('.depth_gnb').slideToggle(1000);
+        }
     })
+    $('.x_box').click(function(){
+        $('header').find('.depth_gnb').slideToggle(1000);
+    })
+})
 
 
 
@@ -110,6 +103,30 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function() {
+
+    $('.util .search').click(function() {
+        var st = $(window).scrollTop();
+
+        if(st >= 600 && $('header #wgnb').is('.fix')){
+            $('.searchBox').css({
+                top: '33px'
+            })
+            $('.searchBox').slideToggle(300);
+        }
+        else if(st <= 599 && !$('header #wgnb').is('.fix')){
+            $('.searchBox').css({
+                top: '46px'
+            })
+            $('.searchBox').slideToggle(300);
+        }
+    })
+
+})
+
+
+
+
 
 
 
@@ -141,9 +158,7 @@ $(document).ready(function() {
                 $('footer .family_site .btn_family').css({
                     background:'url(../img/common/blt_up.png) no-repeat 140px center'
                 })
-                // console.log(list_pos);
             }
-            // 다시 들어가기 위해서는 if 문을 이용해 집어 넣어보자
 
         })
 

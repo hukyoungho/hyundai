@@ -15,6 +15,7 @@
 #body_Content .section1 .slidebanner li{
 	width: 20%;
 	height: 100%;
+	min-height: 760px;
 	float: left;
 	position: relative;
 	z-index: 11;
@@ -26,6 +27,8 @@
 #body_Content .section1 .slidebanner li>img{
 	width: 100%;
 	height: 100%;
+	min-height: 760px;
+	min-width: 1040px;
 }
 #body_Content .section1 .slidebanner li .txt{
 	position: absolute;
@@ -137,7 +140,7 @@
 #body_Content .section1 .slide_control .btn_play {
 	font-size: 0;
 }
-#body_Content .section1 .slide_control .btn_play .start{
+#body_Content .section1 .slide_control .btn_play #start{
 	display: inline-block;
 	width: 34px;
 	height: 34px;
@@ -147,17 +150,18 @@
 	font-size: 0;
 	text-indent: -9999px;
 }
-#body_Content .section1 .slide_control .btn_play .start:hover{
+#body_Content .section1 .slide_control .btn_play #start:hover{
 
 	background: url(../../img/main/btn_play_over.png) no-repeat 50% 50%;
 	background-size: cover;
 }
-#body_Content .section1 .slide_control .btn_play .start:active{
+#body_Content .section1 .slide_control .btn_play #start.on{
 
 	background: url(../../img/main/btn_play_on.png) no-repeat 50% 50%;
 	background-size: cover;
 }
-#body_Content .section1 .slide_control .btn_play .stop{
+
+#body_Content .section1 .slide_control .btn_play #stop{
 	display: inline-block;
 	width: 34px;
 	height: 34px;
@@ -167,16 +171,17 @@
 	font-size: 0;
 	text-indent: -9999px;
 }
-#body_Content .section1 .slide_control .btn_play .stop:hover{
+#body_Content .section1 .slide_control .btn_play #stop:hover{
 
 	background: url(../../img/main/btn_pause_over.png) no-repeat 50% 50%;
 	background-size: cover;
 }
-#body_Content .section1 .slide_control .btn_play .stop:active{
+#body_Content .section1 .slide_control .btn_play #stop.on{
 
 	background: url(../../img/main/btn_pause_on.png) no-repeat 50% 50%;
 	background-size: cover;
 }
+
 
 #body_Content .section1 .icon_scroll {
 	position: absolute;
@@ -408,7 +413,7 @@
 #body_Content .section3 .main_contents .cs_box .view_part .slider li .scenario_box{
     margin: 13px 0 22px ;
 }
-#body_Content .section3 .main_contents .cs_box .view_part .slider li .scenario_box .scenario{
+#body_Content .section3 .main_contents .cs_box .view_part .slider li .scenario_box textarea{
     width: 96%;
     height: 66px;
     padding: 14px 19px;
@@ -588,7 +593,7 @@
 	height: 96px;
 
 }
-#body_Content .section4 .main_contents .recruit .recruit_main .recruit_box .view_part .slider li .scenario_box .scenario{
+#body_Content .section4 .main_contents .recruit .recruit_main .recruit_box .view_part .slider li .scenario_box textarea{
 
     width: 94%;
     height: 66px;
@@ -806,4 +811,30 @@
 
 	opacity:0;
 	transition:all 0.45s ease;
+}
+
+/*navbar*/
+
+
+#body_Content .navbar{
+	position: fixed;
+    top: 50%;
+    right: 30px;
+    width: 23px;
+    z-index: 100;
+}
+
+#body_Content .navbar li a {
+    display: inline-block;
+    width: 100%;
+	height: 100%;
+    border-bottom: 2px solid #000;
+	vertical-align: top;
+}
+#body_Content .navbar li a img {
+    display: none;
+
+}
+#body_Content .navbar li a:hover {
+    background: #000;
 }

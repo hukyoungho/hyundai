@@ -293,15 +293,20 @@
 
 
 
+/*wingbanner*/
 
-
-
-
-
-
-/*seciont3*/
-#body_Content .section3{
-
-    background: url(../../img/intro/blt_bar03.gif) no-repeat 0 0;
+#body_Content #wingbanner{
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    margin-top: 731px;
+    left: 50%;
+    margin-left: 520px;
+    width: 24px;
+    height: 25px;
+    background: url(../../img/business/btn_top.png) no-repeat left top;
+    font-size: 0px;
+    line-height: 0px;
 
 }

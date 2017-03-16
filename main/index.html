@@ -15,32 +15,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="../js/common_script.js"></script>
-    <style>
-        .flaticon-twitter-logo-silhouette::before {
-            font-size: 15px;
-            color: #4e4f53;
-        }
 
-        .flaticon-facebook-logo::before {
-            font-size: 15px;
-            color: #4e4f53;
-        }
-
-        .flaticon-google-plus-symbol::before {
-            font-size: 15px;
-            color: #4e4f53;
-        }
-
-        .flaticon-envelope::before {
-            font-size: 15px;
-            color: #4e4f53;
-        }
-
-        .flaticon-plus-black-symbol::before {
-            font-size: 15px;
-            color: #4e4f53;
-        }
-    </style>
 
 </head>
 
@@ -85,13 +60,15 @@
             <ul class="util">
                 <li>
                     <a href="#none" class="search" title="통합검색">통합검색</a>
+                    <div class="searchBox">
+                        <input type="text" title="검색어를 입력해 주세요.">
+                        <input type="button" title="검색버튼">
+                        <span class="point"></span>
+                    </div>
                 </li>
-
                 <li>
                     <a href="#none" class="lang">Korean</a>
                 </li>
-
-
             </ul>
 
 
@@ -240,8 +217,8 @@
                     <a class="next" id="next" href="#none">Next</a>
                 </div>
                 <div class="btn_play">
-                    <a class="start" href="#none">Start</a>
-                    <a class="stop" href="#none">Stop</a>
+                    <a class="on" id="start" href="#none">Start</a>
+                    <a class="" id="stop" href="#none">Stop</a>
                 </div>
             </div>
 
@@ -283,12 +260,10 @@
                             <a href="#none">
                                 <span class="icon">
                                         <img src="../img/main//icon_news01.png" alt="">
-                                    </span>
+                                </span>
                                 <span class="img">
-
-                                            <img src="../img/main/2.jpg" alt="">
-
-                                    </span>
+                                    <img src="../img/main/2.jpg" alt="">
+                                </span>
                                 <span class="title">2017년 현대건설 인턴 채용공고 (재경/건축)</span>
                                 <span class="date">28.FEB.2017</span>
                                 <span class="bgPatten"></span>
@@ -386,11 +361,11 @@
                                     <strong>건설이야기 터키 보스포러스 제3대교</strong>
                                 </div>
                                 <div class="scenario_box">
-                                    <textarea readonly="readonly" class="scenario" title="동영상 자막" cols="97" rows="5">터키 이스탄불을 흐르는 보스포러스 해협 위,유럽과 아시아를 연결하는 역사적인 교량인
-                                            대건설의 터키 보스포러스 제3대교!
-                                            완공까지 3년 2개월, 세계 교량건설 역사를 새로 쓴
-                                            현대건설의 생생한 교량기술력을
-                                            지금 타임랩스 영상으로 만나보세요!
+                                    <textarea title="동영상 자막" cols="97" rows="5">터키 이스탄불을 흐르는 보스포러스 해협 위,유럽과 아시아를 연결하는 역사적인 교량인
+대건설의 터키 보스포러스 제3대교!
+완공까지 3년 2개월, 세계 교량건설 역사를 새로 쓴
+현대건설의 생생한 교량기술력을
+지금 타임랩스 영상으로 만나보세요!
                                         </textarea>
                                 </div>
                             </li>
@@ -400,32 +375,32 @@
                                     <strong>건설이야기 터널 편</strong>
                                 </div>
                                 <div class="scenario_box">
-                                    <textarea readonly="readonly" class="scenario" title="동영상 자막" cols="97" rows="5">높고 단단한 산, 우리는 여기에 터널을 뚫을 거예요.
-                                            겉으로는 알 수 없지만 산 속에는 다양한 종류의 암석층이 있기 때문에
-                                            공사에 앞서 터널이 지나가게 될 길의 특징을 꼼꼼히 분석해야 해요.
-                                            산속에 기둥을 설치해서 우리가 뚫으려는 곳이 어떤 모양인지, 얼마나 단단한지
-                                            컴퓨터로 조사해서 계획합니다.
-                                            어머! 어느 곳이 단단하고 약한지 미리 알 수 있네요!
-                                            계획이 탄탄히 세워지면,
-                                            입구(갱문)를 만들고
-                                            화약을 설치해서 발파합니다.
-                                            붐! 터널의 입구가 뚫렸어요!
-                                            그러면 포크레인과 트럭이 와서 터널 속을 파기 시작해요.
-                                            터널 속을 파내는 동안에도
-                                            계속 표면(막장면)의 상태를 조사해서 어떻게 보강할 것인지 판단해야 해요
-                                            여기 지층이 충분히 단단하지 않은 것 같네요. 이럴 땐 단단하게 만들어 줘야 하죠.
-                                            터널이 무너지지 않도록 지지대(강지보재)를 설치하고
-                                            콘크리트(쇼크리트)를 뿜어서 벽면을 단단하게!
-                                            마지막으로 볼트(록볼트)를 설치해서 무너지지 않도록 고정시켜요.
-                                            다시 발파를 하고, 흙을 파내고, 터널 면을 단단히 고정시킵니다.
-                                            이런 과정들이 반복되면서 산속에 터널이 만들어지는 거죠.
-                                            마지막으로 산 속을 지나는 지하수는 배수로로 내보내고
-                                            터널벽면은 철근을 설치하고
-                                            콘크리트를 부어서 안전하고 튼튼하게 마감한답니다.
-                                            쨘! 이렇게 단단해 보이는 산을 뚫고
-                                            튼튼한 터널이 완성되었어요!
-                                            세상과 세상, 사람과 사람을 연결하는 터널
-                                            세계에서 제일 멋진 기술로 현대건설이 짓습니다!
+                                    <textarea title="동영상 자막" cols="97" rows="5">높고 단단한 산, 우리는 여기에 터널을 뚫을 거예요.
+겉으로는 알 수 없지만 산 속에는 다양한 종류의 암석층이 있기 때문에
+공사에 앞서 터널이 지나가게 될 길의 특징을 꼼꼼히 분석해야 해요.
+산속에 기둥을 설치해서 우리가 뚫으려는 곳이 어떤 모양인지, 얼마나 단단한지
+컴퓨터로 조사해서 계획합니다.
+어머! 어느 곳이 단단하고 약한지 미리 알 수 있네요!
+계획이 탄탄히 세워지면,
+입구(갱문)를 만들고
+화약을 설치해서 발파합니다.
+붐! 터널의 입구가 뚫렸어요!
+그러면 포크레인과 트럭이 와서 터널 속을 파기 시작해요.
+터널 속을 파내는 동안에도
+계속 표면(막장면)의 상태를 조사해서 어떻게 보강할 것인지 판단해야 해요
+여기 지층이 충분히 단단하지 않은 것 같네요. 이럴 땐 단단하게 만들어 줘야 하죠.
+터널이 무너지지 않도록 지지대(강지보재)를 설치하고
+콘크리트(쇼크리트)를 뿜어서 벽면을 단단하게!
+마지막으로 볼트(록볼트)를 설치해서 무너지지 않도록 고정시켜요.
+다시 발파를 하고, 흙을 파내고, 터널 면을 단단히 고정시킵니다.
+이런 과정들이 반복되면서 산속에 터널이 만들어지는 거죠.
+마지막으로 산 속을 지나는 지하수는 배수로로 내보내고
+터널벽면은 철근을 설치하고
+콘크리트를 부어서 안전하고 튼튼하게 마감한답니다.
+쨘! 이렇게 단단해 보이는 산을 뚫고
+튼튼한 터널이 완성되었어요!
+세상과 세상, 사람과 사람을 연결하는 터널
+세계에서 제일 멋진 기술로 현대건설이 짓습니다!
                                         </textarea>
                                 </div>
                             </li>
@@ -467,7 +442,7 @@
                                             <strong>현대건설 직무소개 | 구매 편</strong>
                                         </div>
                                         <div class="scenario_box">
-                                            <textarea readonly="readonly" class="scenario" title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
+                                            <textarea title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
 
 눈치빠른 염대리가 말하길,
 연애나 건설이나
@@ -483,12 +458,12 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <iframe id="ifrm1" src="https://www.youtube.com/embed/Iw-tBqjje0A?wmode=opaque" title="현대건설인이 건설을 말하다 인터뷰 동영상중 2015 Hyundai Construction Job Introduction_설계 편 영상입니다" width="100%" height="355" frameborder="0" allowfullscreen=""></iframe>
+                                        <iframe src="https://www.youtube.com/embed/Iw-tBqjje0A?wmode=opaque" title="현대건설인이 건설을 말하다 인터뷰 동영상중 2015 Hyundai Construction Job Introduction_설계 편 영상입니다" width="100%" height="355" frameborder="0" allowfullscreen=""></iframe>
                                         <div class="title">
                                             <strong class="fs18">현대건설 직무소개 | 구매 편</strong>
                                         </div>
                                         <div class="scenario_box">
-                                            <textarea readonly="readonly" class="scenario" title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
+                                            <textarea title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
 
 눈치빠른 염대리가 말하길,
 연애나 건설이나
@@ -504,12 +479,12 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <iframe id="ifrm2" src="https://www.youtube.com/embed/hzw15zro7fY?wmode=opaque" title="현대건설인이 건설을 말하다 인터뷰 동영상중 2015 Hyundai Construction Job Introduction_시공 편 영상입니다" width="100%" height="355" frameborder="0" allowfullscreen=""></iframe>
+                                        <iframe src="https://www.youtube.com/embed/hzw15zro7fY?wmode=opaque" title="현대건설인이 건설을 말하다 인터뷰 동영상중 2015 Hyundai Construction Job Introduction_시공 편 영상입니다" width="100%" height="355" frameborder="0" allowfullscreen=""></iframe>
                                         <div class="title">
                                             <strong class="fs18">현대건설 직무소개 | 구매 편</strong>
                                         </div>
                                         <div class="scenario_box">
-                                            <textarea readonly="readonly" class="scenario" title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
+                                            <textarea title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
 
 눈치빠른 염대리가 말하길,
 연애나 건설이나
@@ -525,12 +500,12 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <iframe id="ifrm3" src="https://www.youtube.com/embed/fcMhvxznO9E?wmode=opaque" title="현대건설인이 건설을 말하다 인터뷰 동영상중 2015 Hyundai Construction Job Introduction_해외영업 편 영상입니다" width="100%" height="355" frameborder="0" allowfullscreen=""></iframe>
+                                        <iframe src="https://www.youtube.com/embed/fcMhvxznO9E?wmode=opaque" title="현대건설인이 건설을 말하다 인터뷰 동영상중 2015 Hyundai Construction Job Introduction_해외영업 편 영상입니다" width="100%" height="355" frameborder="0" allowfullscreen=""></iframe>
                                         <div class="title">
                                             <strong class="fs18">현대건설 직무소개 | 구매 편</strong>
                                         </div>
                                         <div class="scenario_box">
-                                            <textarea readonly="readonly" class="scenario" title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
+                                            <textarea title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
 
 눈치빠른 염대리가 말하길,
 연애나 건설이나
@@ -546,12 +521,12 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <iframe id="ifrm4" src="https://www.youtube.com/embed/H1ot8UDMlLo?wmode=opaque" title="현대건설인이 건설을 말하다 인터뷰 동영상중 Introduction_연구개발 영상입니다" width="100%" height="355" frameborder="0" allowfullscreen=""></iframe>
+                                        <iframe src="https://www.youtube.com/embed/H1ot8UDMlLo?wmode=opaque" title="현대건설인이 건설을 말하다 인터뷰 동영상중 Introduction_연구개발 영상입니다" width="100%" height="355" frameborder="0" allowfullscreen=""></iframe>
                                         <div class="title">
                                             <strong class="fs18">현대건설 직무소개 | 구매 편</strong>
                                         </div>
                                         <div class="scenario_box">
-                                            <textarea readonly="readonly" class="scenario" title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
+                                            <textarea title="동영상 자막" cols="97" rows="5">현대건설이 건설을 말하다.
 
 눈치빠른 염대리가 말하길,
 연애나 건설이나

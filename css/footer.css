@@ -94,6 +94,12 @@ footer .footer_box .family_site .family_list_box .family_list li a{
     font-size: 13px;
 	font-weight: 400;
 }
+footer .footer_box .family_site .family_list_box .family_list li a:hover{
+    color: #009944;
+    text-decoration: underline;
+    background: #e7e7e7;
+}
+
 
 
 footer .footer_box .family_site .submit{
@@ -113,6 +119,7 @@ footer .footer_box .family_site .sns_icon{
 footer .footer_box .family_site .sns_icon li{
 	float: left;
 }
+
 footer .footer_box .family_site .label_box{
 	position: absolute;
 	top: 0;
@@ -120,4 +127,35 @@ footer .footer_box .family_site .label_box{
 }
 footer .footer_box .utill a:hover{
     color: #fff;
+}
+
+
+/*flaticon*/
+.flaticon-twitter-logo-silhouette::before {
+	font-size: 15px!important;
+	color: #4e4f53;
+}
+
+.flaticon-facebook-logo::before {
+	font-size: 15px!important;
+	color: #4e4f53;
+}
+
+.flaticon-google-plus-symbol::before {
+	font-size: 15px!important;
+	color: #4e4f53;
+}
+
+.flaticon-envelope::before {
+	font-size: 15px!important;
+	color: #4e4f53;
+}
+
+.flaticon-plus-black-symbol::before {
+	font-size: 15px!important;
+	color: #4e4f53;
+}
+
+a[class^="flaticon"]:hover::before {
+	color: #fff;
 }
