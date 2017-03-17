@@ -57,3 +57,9 @@ caption{
 	font-size: 0px;
 	line-height: 0px;
 }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #555;
+}
