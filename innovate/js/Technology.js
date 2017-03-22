@@ -47,35 +47,35 @@ $(function(){
 
 
 
-// navbar
-
-
-
-
-$(document).ready(function() {
-    $(window).scroll(function(){
-            var st = $(window).scrollTop();
-            var wh = $(window).height();
-            console.log(wh);
-            // console.log(st);
-            if(st>=150){
-                $('#wingbanner').fadeIn("fast").stop().animate({
-                    top:$(this).scrollTop() + wh*65/100
-                },300)
-            }else{
-
-                $('#wingbanner').fadeOut("fast");
-            }
-
-        })
-
-    $('#wingbanner').click(function(){
-        console.log(1);
-        $('body,html').stop().animate({
-            scrollTop:0
-        },300)
-    })
-
-
-
-});
+// // navbar
+//
+//
+//
+//
+// $(document).ready(function() {
+//     $(window).scroll(function(){
+//             var st = $(window).scrollTop();
+//             var wh = $(window).height();
+//             console.log(wh);
+//             // console.log(st);
+//             if(st>=150){
+//                 $('#wingbanner').fadeIn("fast").stop().animate({
+//                     top:$(this).scrollTop() + wh*65/100
+//                 },300)
+//             }else{
+//
+//                 $('#wingbanner').fadeOut("fast");
+//             }
+//
+//         })
+//
+//     $('#wingbanner').click(function(){
+//         console.log(1);
+//         $('body,html').stop().animate({
+//             scrollTop:0
+//         },300)
+//     })
+//
+//
+//
+// });

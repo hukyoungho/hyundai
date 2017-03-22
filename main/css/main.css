@@ -838,12 +838,21 @@
 #body_Content .navbar li a {
     display: inline-block;
     width: 100%;
-	min-height: 10px;
+	height: 10px;
+	overflow: hidden;
+}
+#body_Content .navbar li a.on {
+	height: auto;
 }
 #body_Content .navbar li a img {
-    display: none;
+    opacity: 0;
+	transition: 500ms ;
+}
+#body_Content .navbar li a.on img {
+    opacity: 1;
 
 }
+
 #body_Content .navbar li:hover {
     background: #000;
 }
