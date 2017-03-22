@@ -63,3 +63,9 @@ table {
     border-spacing: 0;
     color: #555;
 }
+legend{
+    display: none;
+}
+label{
+	font-size: 0px;
+}

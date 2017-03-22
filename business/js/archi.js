@@ -42,13 +42,15 @@ $(function(){
 
     $(window).scroll(function(){
             var st = $(window).scrollTop();
+            var wh = $(window).height();
+            console.log(wh);
             // console.log(st);
             if(st>=150){
                 $('#wingbanner').fadeIn("fast").stop().animate({
-                    top:$(this).scrollTop()
+                    top:$(this).scrollTop() + wh*65/100
                 },300)
             }else{
-                $('#wingbanner').removeClass()
+
                 $('#wingbanner').fadeOut("fast");
             }
 
@@ -61,6 +63,7 @@ $(function(){
         },300)
     })
 });
+
 
 
 

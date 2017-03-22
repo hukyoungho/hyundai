@@ -558,3 +558,6 @@
 #body_Content .navbar li:hover {
     background: #000;
 }
+#body_Content .navbar li:not(.on):hover {
+    background: #000;
+}

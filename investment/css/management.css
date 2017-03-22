@@ -264,6 +264,7 @@
 
 }
 
+
 #body_Content .section2 .contents .listArea > ul > li{
     width: 135px;
     border-top: 1px solid #c4c4c4;
@@ -279,6 +280,12 @@
     font-size: 13px;
     color: #252525;
 
+}
+#body_Content .section2 .contents .listArea > ul > li > a:hover{
+    text-decoration: underline;
+}
+#body_Content .section2 .contents .listArea > ul > li.on a{
+    color: #008445;
 }
 
 
@@ -351,7 +358,7 @@
 #body_Content .section3{
     width: 830px;
     margin: 0 auto;
-    margin-bottom: 105px;
+    margin-top: 80px;
     padding-top: 80px;
     padding-bottom: 80px;
     overflow: hidden;
@@ -404,6 +411,11 @@
     line-height: 34px;
     padding: 0 10px;
     color: #000;
+    transition: all 0.5s;
+}
+#body_Content .section3 .tabWrap > div > h5 a:hover{
+    background-color: #004a80;
+    color: #fff;
 }
 #body_Content .section3 .tabWrap > div.on > h5 a{
     background-color: #004a80;
@@ -547,7 +559,7 @@
     text-align: center;
 }
 
-#body_Content .section3 .tabWrap > div > .wrap .assemblyArea .list{
+#body_Content .section3 .tabWrap > div > .wrap .assemblyArea .listArea .list{
     margin-top: 15px;
     height: 60px;
     padding: 23px 30px 33px;
@@ -557,6 +569,11 @@
     line-height: 24px;
     color: #555;
     overflow-y: auto;
+    display: none;
+}
+#body_Content .section3 .tabWrap > div > .wrap .assemblyArea .listArea li.on .list{
+
+    display: block;
 }
 
 
@@ -566,15 +583,15 @@
 /*tanb2*/
 
 
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .list > li{
     margin-top: 30px;
     overflow: hidden;
 
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li:first-child{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .list > li:first-child{
     margin-top: 18px;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li .tit{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .list > li .tit{
     float: left;
     width: 135px;
     padding-top: 13px;
@@ -583,60 +600,55 @@
     font-weight: 700;
 
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li .tit span{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .list > li .tit span{
     display: block;
     font-size: 12px;
 }
 
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li .rightArea{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .list > li .rightArea{
     float: right;
     width: 660px;
 
 }
 
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li .rightArea{
-    float: right;
-    width: 660px;
-
-}
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li .rightArea  li{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .list > li .rightArea  li{
     display: inline-block;
     width: 327px;
     height: 99px;
 
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li .rightArea li dt{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .list > li .rightArea li dt{
     margin-bottom: 1px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li .rightArea li dd{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .list > li .rightArea li dd{
     font-size: 13px;
     line-height: 19px;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .list > li .rightArea li dd:nth-child(4)~dd{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .list > li .rightArea li dd:nth-child(4)~dd{
     padding-left: 48px;
     text-indent: -48px;
 }
 
 
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .activeArea{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .activeArea{
     border: 1px solid #c4c4c4;
     margin:  30px 0px;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .activeArea .titBox{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .activeArea .titBox{
     border-bottom: 1px solid #c4c4c4;
     padding: 12px 14px 11px 26px;
     overflow: hidden;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .activeArea .titBox .tit{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .activeArea .titBox .tit{
     display: inline-block;
     margin-top: 8px;
     color: #555;
     font-weight: 600;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap  > .tabContent .activeArea .titBox a{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap  > .tabContent .activeArea .titBox a{
     float: right;
     height: 28px;
     line-height: 28px;
@@ -651,25 +663,28 @@
     background: #fff url(../../img/investment/icon_open.gif) no-repeat 58px 50%;
     letter-spacing: 0px;
 }
-
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap .tabContent .activeList{
-    padding: 32px 19px 38px 19px;
-    background-color: #f6f6f6;
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent .activeWrap{
     display: none;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap .tabContent .activeList:nth-child(2) ~ .activeList{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent .activeList{
+    padding: 32px 19px 38px 19px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+
+}
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent .activeList:nth-child(2) ~ .activeList{
     padding: 0px 19px 38px 19px;
     margin-top: -20px;
     overflow: hidden;
 }
 
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap .tabContent .activeList  table{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent .activeList  table{
     width: 100%;
     color: #555;
     margin-bottom: 0px;
 
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap .tabContent .year {
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent .year {
     display: block;
     margin-bottom: 6px;
     font-size: 32px;
@@ -677,23 +692,23 @@
     letter-spacing: 0px;
 
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap .tabContent table thead tr th {
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent table thead tr th {
     background-color: inherit;
     color: #252525;
     font-weight: 600;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap .tabContent table tbody .left {
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent table tbody .left {
     text-align: left;
     padding-left: 20px;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap .tabContent table tbody tr td:last-child {
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent table tbody tr td:last-child {
     color: #008445;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap .tabContent .btn{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent .btn{
     margin-top: 46px;
     float: right;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2) > .wrap .tabContent .btn a{
+#body_Content .section3 .tabWrap > div:first-child ~ div> .wrap .tabContent .btn a{
     height: 28px;
     line-height: 28px;
     display: inline-block;
@@ -707,15 +722,15 @@
     background: #555 url(../../img/investment/icon_close.gif) no-repeat 58px 50%;
     letter-spacing: 0px;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2)  .manageList{
+#body_Content .section3 .tabWrap > div:first-child ~ div .manageList{
     margin-bottom: 14px;
     padding: 13px 0 0 40px;
     line-height: 22px;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2)  .manageList li{
+#body_Content .section3 .tabWrap > div:first-child ~ div .manageList li{
     text-indent: -40px;
 }
-#body_Content .section3 .tabWrap > div:nth-child(2)  .manageList li .bar{
+#body_Content .section3 .tabWrap > div:first-child ~ div .manageList li .bar{
     padding-right: 12px;
     background: url(../../img/investment/bar06.gif) no-repeat 100% 1px
 }
@@ -725,6 +740,29 @@
 
 
 
+/*tab3*/
+
+#body_Content .section3 .tabWrap > div:last-child> .wrap  > .tabContent .list > li .rightArea{
+    float:none!important;
+}
+
+#body_Content .section3 .tabWrap > div:last-child> .wrap  > .tabContent .list{
+    border: 1px solid #c4c4c4;
+    padding: 0 29px;
+    padding-bottom: 29px;
+}
+
+#body_Content .section3 .tabWrap >  div:last-child > .wrap > .tabContent .activeArea {
+    margin-top:0px!important;
+}
+#body_Content .section3 .tabWrap >  div:last-child > .wrap > .tabContent .manageList {
+    margin-bottom: 21px;
+    padding: 19px 0 19px 40px;
+    border-bottom: 1px solid #c4c4c4;
+}
+#body_Content .section3 .tabWrap > div:last-child> .wrap > .tabContent .list > li:first-child {
+    margin-top: 0px!important;
+}
 
 
 
@@ -732,9 +770,72 @@
 
 
 
-
-
-
+/*section4*/
+#body_Content .section4{
+    width: 831px;
+    margin: 0 auto;
+    margin-bottom: 105px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    background: url(../../img/intro/blt_bar03.gif) no-repeat 0 0;
+    position: relative;
+    left: 86px;
+}
+#body_Content .section4 .subtit {
+    height: 70px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+}
+#body_Content .section4 table {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #898989 ;
+    border-bottom: 1px solid #898989;
+}
+#body_Content .section4 table th, td {
+    padding: 13px 0 9px;
+    border-bottom: 1px solid #898989;
+    border-right: 1px solid #898989;
+    color: #252525;
+    font-weight: 400;
+}
+#body_Content .section4 table td:last-of-type,
+#body_Content .section4 table thead th:last-of-type
+ {
+    border-right: 0px;
+}
+#body_Content .section4 table thead tr,
+#body_Content .section4 table .bg {
+    background-color: #f1f1f1;
+}
+#body_Content .section4 .graphCircle {
+    border: 1px solid #c4c4c4;
+    margin-top: 30px;
+    position: relative;
+}
+#body_Content .section4 .grapBar {
+    border: 1px solid #c4c4c4;
+    overflow: hidden;
+}
+#body_Content .section4 .grapBar > div {
+    float: left;
+}
+#body_Content .section4 .grapBar > div:first-child {
+    box-sizing: border-box;
+    border-right: 1px solid #c4c4c4;
+}
+#body_Content .section4 h5 {
+    padding: 18px;
+    font-size: 14px;
+    color: #333;
+}
+#body_Content .section4 .graphCircle h5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 
 
@@ -804,6 +905,6 @@
     width: 13px;
 }
 
-#body_Content .navbar li:hover {
+#body_Content .navbar li:not(.on):hover {
     background: #000;
 }

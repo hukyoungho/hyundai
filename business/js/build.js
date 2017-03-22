@@ -30,7 +30,6 @@ $(function(){
 //btnMore
 
 $(function(){
-
     $('.btnMore a').click(function(){
 
         $('section:nth-child(5)~section').css({
@@ -38,26 +37,29 @@ $(function(){
         });
         console.log('a');
     })
-//wingbanner
+    //wingbanner
     $(window).scroll(function(){
             var st = $(window).scrollTop();
+            var wh = $(window).height();
+            console.log(wh);
             // console.log(st);
             if(st>=150){
-                $('#wingbanner').fadeIn("slow").stop().animate({
-                    top:$(this).scrollTop()
-                },500)
+                $('#wingbanner').fadeIn("fast").stop().animate({
+                    top:$(this).scrollTop() + wh*65/100
+                },300)
             }else{
-                $('#wingbanner').removeClass()
-                $('#wingbanner').fadeOut("slow");
+
+                $('#wingbanner').fadeOut("fast");
             }
 
         })
 
+    $('#wingbanner').click(function(){
+        console.log(1);
+        $('body,html').stop().animate({
+            scrollTop:0
+        },300)
+    })
+
 
 });
-
-
-
-
-
-// navbar
